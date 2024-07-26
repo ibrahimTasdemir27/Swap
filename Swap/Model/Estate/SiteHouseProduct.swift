@@ -24,14 +24,14 @@ import Foundation
 }
 
 
-class SiteHouse: Estate {
+class SiteHouseProduct: EstateProduct {
     let floorLocation: Int
     let autopark: AutoPark
     let subscription: Int
     let site: Bool
     let siteName: String
     
-    init(estate: Estate, floorLocation: Int, autopark: AutoPark, subscription: Int, site: Bool, siteName: String) {
+    init(estate: EstateProduct, floorLocation: Int, autopark: AutoPark, subscription: Int, site: Bool, siteName: String) {
         self.floorLocation = floorLocation
         self.autopark = autopark
         self.subscription = subscription

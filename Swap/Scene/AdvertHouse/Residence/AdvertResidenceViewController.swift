@@ -1,20 +1,15 @@
 //
-//  AdvertHouseViewController.swift
+//  AdvertResidenceViewController.swift
 //  Swap
 //
-//  Created by İbrahim Taşdemir on 24.07.2024.
+//  Created by İbrahim Taşdemir on 25.07.2024.
 //
 
 import UIKit
 
-
-final class AdvertHouseViewController: BaseViewController, AlertPresentable, FormFieldAllRequirementsUnwrapper {
+final class AdvertResidenceViewController: UIViewController, AlertPresentable, FormFieldAllRequirementsUnwrapper {
     
-    var viewModel: AdvertHouseViewModel!
-    override func provideViewModel() -> BaseViewModel? {
-        return viewModel
-    }
-
+    var viewModel: AdvertResidenceViewModel!
     
     //MARK: -> UI Components
     @IBOutlet weak var advertHeadingField: ONFormField!
@@ -22,27 +17,32 @@ final class AdvertHouseViewController: BaseViewController, AlertPresentable, For
     @IBOutlet weak var sqftGrand: ONFormField!
     @IBOutlet weak var sqftReal: ONFormField!
     @IBOutlet weak var age: ONFormField!
+    @IBOutlet weak var floorLocation: ONFormField!
     @IBOutlet weak var floor: ONFormField!
     @IBOutlet weak var bath: ONFormField!
+    @IBOutlet weak var siteName: ONFormField!
+    @IBOutlet weak var subscription: ONFormField!
     
     @IBOutlet weak var room: OFFormField!
     @IBOutlet weak var heating: OFFormField!
     @IBOutlet weak var balcony: OFFormField!
     @IBOutlet weak var lift: OFFormField!
+    @IBOutlet weak var autopark: OFFormField!
     @IBOutlet weak var furniture: OFFormField!
     @IBOutlet weak var state: OFFormField!
+    @IBOutlet weak var site: OFFormField!
     @IBOutlet weak var landRegister: OFFormField!
     
     lazy var allFields: [BaseFormRequirements] = [
-        advertHeadingField, advertDescriptionField, sqftGrand, sqftReal, age, floor, bath, room, heating, balcony, lift,
-        furniture, state, landRegister
+        advertHeadingField, advertDescriptionField, sqftGrand, sqftReal, age, floorLocation, floor, bath, subscription, room, heating, balcony, lift, autopark, furniture, state, site, landRegister
     ]
     
     lazy var numericFields: [BaseFormRequirements] = [
-        sqftGrand, sqftReal, age, floor, bath
+        sqftGrand, sqftReal, age, floorLocation, floor, bath
     ]
     
     // MARK: - View lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.prepareViews()
@@ -73,6 +73,12 @@ final class AdvertHouseViewController: BaseViewController, AlertPresentable, For
                 self?.viewModel.lift = value
             }
         }
+        autopark.formTypeEnum = .autopark
+        autopark.changedFormElement = { [weak self] value in
+            if let value = value as? AutoPark {
+                self?.viewModel.autopark = value
+            }
+        }
         furniture.formTypeEnum = .yesno(raw: "furniture")
         furniture.changedFormElement = { [weak self] value in
             if let value = value as? Bool {
@@ -85,13 +91,18 @@ final class AdvertHouseViewController: BaseViewController, AlertPresentable, For
                 self?.viewModel.state = value
             }
         }
+        site.formTypeEnum = .yesno(raw: "site")
+        site.changedFormElement = { [weak self] value in
+            if let value = value as? Bool {
+                self?.viewModel.site = value
+            }
+        }
         landRegister.formTypeEnum = .houselandregister
         landRegister.changedFormElement = { [weak self] value in
             if let value = value as? EstateLandRegisterStatus {
                 self?.viewModel.landRegister = value
             }
         }
-        
     }
     
     // MARK: - IBActions
@@ -107,9 +118,12 @@ final class AdvertHouseViewController: BaseViewController, AlertPresentable, For
         
         viewModel.advertHeadingField = advertHeadingField.text
         viewModel.advertDescriptionField = advertDescriptionField.text
+        viewModel.siteName = siteName.text
         viewModel.sqftGrand = Int(sqftGrand.safeText() ?? "")
         viewModel.sqftReal = Int(sqftReal.safeText() ?? "")
         viewModel.age = Int(age.safeText() ?? "")
+        viewModel.floorLocation = Int(floorLocation.safeText() ?? "")
+        viewModel.subscription = Int(subscription.safeText() ?? "")
         viewModel.floor = Int(floor.safeText() ?? "")
         viewModel.bath = Int(bath.safeText() ?? "")
         
@@ -120,14 +134,14 @@ final class AdvertHouseViewController: BaseViewController, AlertPresentable, For
 
 
 
-
 // MARK: - ViewModel Delegate -
-extension AdvertHouseViewController: AdvertHouseViewModel.Delegate {
+
+extension AdvertResidenceViewController: AdvertResidenceViewModel.Delegate {
     func basicsInfoRequirementsSuccess() {
         previewAdress()
     }
     
-    func createAdvertEstateProductSuccess(_ product: EstateProduct, with images: [UIImage]) {
+    func createAdvertEstateProductSuccess(_ product: SiteHouseProduct, with images: [UIImage]) {
         let vc = AdvertPreviewViewController.create(for: product, with: images)
         navigationController?.pushViewController(vc, animated: true)
     }
@@ -139,7 +153,7 @@ extension AdvertHouseViewController: AdvertHouseViewModel.Delegate {
 
 
 //MARK: -> AdressViewController Delegate - Previewer
-extension AdvertHouseViewController: AdressViewController.Delegate, AdressPreviewer {
+extension AdvertResidenceViewController: AdressViewController.Delegate, AdressPreviewer {
     func readyAdressContent(_ adress: AdressViewModel.Adress) {
         viewModel.address = adress
         previewGallery()
@@ -150,7 +164,7 @@ extension AdvertHouseViewController: AdressViewController.Delegate, AdressPrevie
 
 
 //MARK: -> RequestGalleryViewController Delegate - Previewer
-extension AdvertHouseViewController: RequestGalleryViewController.Delegate, GalleryPreviewer {
+extension AdvertResidenceViewController: RequestGalleryViewController.Delegate, GalleryPreviewer {
     func didFinishSelectImage(with images: [UIImage]) {
         viewModel.images = images
         viewModel.pickImageSuccess(images)
@@ -162,20 +176,21 @@ extension AdvertHouseViewController: RequestGalleryViewController.Delegate, Gall
 
 
 // MARK: - Creator -
-extension AdvertHouseViewController: XibNameProvider {
+extension AdvertResidenceViewController: XibNameProvider {
     static var xibName: String {
         get {
-            return "AdvertHouseViewController"
+            return "AdvertResidenceViewController"
         }
     }
     
-    class func create(categorys: [String], type: HouseType) -> AdvertHouseViewController {
-        let vc: AdvertHouseViewController = AdvertHouseViewController.instantiateFromNib()
+    class func create(categorys: [String]) -> AdvertResidenceViewController {
+        let vc: AdvertResidenceViewController = AdvertResidenceViewController.instantiateFromNib()
         vc.modalTransitionStyle = .crossDissolve
         vc.modalPresentationStyle = .overFullScreen
-        let viewModel: AdvertHouseViewModel = AdvertHouseViewModel(categorys: categorys, type: type)
+        let viewModel: AdvertResidenceViewModel = AdvertResidenceViewModel(categorys: categorys)
         vc.viewModel = viewModel
         viewModel.delegate = vc
         return vc
     }
 }
+

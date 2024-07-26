@@ -11,7 +11,6 @@ final class CarPreview: UIView, PreviewLayer {
     typealias PreviewElement = CarProduct
     
     @IBOutlet var contentView: UIView!
-    
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var advertNumber: UILabel!
     @IBOutlet weak var brand: UILabel!

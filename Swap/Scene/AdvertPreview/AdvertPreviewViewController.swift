@@ -41,7 +41,7 @@ final class AdvertPreviewViewController: BaseViewController {
         advertHeading.text = viewModel.product.heading
         sellerName.text = viewModel.product.seller.name
         sellerOpenedAccountDate.text = viewModel.product.seller.registerDate
-        categoryLabel.text = viewModel.product.category
+        categoryLabel.text = viewModel.product.categoryStrings
         adressLabel.text = viewModel.product.adress.describe()
     }
     
@@ -67,6 +67,21 @@ final class AdvertPreviewViewController: BaseViewController {
 extension AdvertPreviewViewController: AdvertPreviewViewModel.Delegate {
     func setCarPreviewProduct(_ product: CarProduct) {
         let view = CarPreview(preview: product)
+        setProductView(view)
+    }
+    
+    func setHousePreview(_ product: EstateProduct) {
+        let view = HousePreview(preview: product)
+        setProductView(view)
+    }
+    
+    func setSiteHousePreview(_ product: SiteHouseProduct) {
+        let view = SiteHousePreview(preview: product)
+        setProductView(view)
+    }
+    
+    func setLandPreview(_ product: LandProduct) {
+        let view = LandPreview(preview: product)
         setProductView(view)
     }
     

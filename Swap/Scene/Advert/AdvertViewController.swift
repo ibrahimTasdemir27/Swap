@@ -58,12 +58,25 @@ extension AdvertViewController: AdvertViewModelDelegate {
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    func redirectAdvertHouse() {
-        
+    func redirectAdvertHouse(for type: HouseType) {
+        let vc = AdvertHouseViewController.create(categorys: viewModel.selectedContents, type: type)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
+    func redirectAdvertApartment() {
+        let vc = AdvertAppertmentViewController.create(categorys: viewModel.selectedContents)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func redirectAdvertResidence() {
+        let vc = AdvertResidenceViewController.create(categorys: viewModel.selectedContents)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+
+    
     func redirectAdvertLand() {
-        
+        let vc = AdvertLandViewController.create(categorys: viewModel.selectedContents)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

@@ -21,9 +21,9 @@
 		4F17DC162C4E5EF100C106D9 /* AdvertPreviewImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC132C4E5EF100C106D9 /* AdvertPreviewImageCollectionViewCell.swift */; };
 		4F17DC182C4E602200C106D9 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC172C4E602200C106D9 /* CollectionViewCell.swift */; };
 		4F17DC2D2C4E8D9400C106D9 /* PreviewLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC2C2C4E8D9400C106D9 /* PreviewLayer.swift */; };
-		4F17DC312C4E910D00C106D9 /* Estate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC302C4E910D00C106D9 /* Estate.swift */; };
+		4F17DC312C4E910D00C106D9 /* EstateProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC302C4E910D00C106D9 /* EstateProduct.swift */; };
 		4F17DC332C50313A00C106D9 /* Appertment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC322C50313A00C106D9 /* Appertment.swift */; };
-		4F17DC352C50552200C106D9 /* SiteHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC342C50552200C106D9 /* SiteHouse.swift */; };
+		4F17DC352C50552200C106D9 /* SiteHouseProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC342C50552200C106D9 /* SiteHouseProduct.swift */; };
 		4F17DC372C50554200C106D9 /* Residence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC362C50554200C106D9 /* Residence.swift */; };
 		4F17DC392C50558700C106D9 /* Detached.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC382C50558700C106D9 /* Detached.swift */; };
 		4F17DC3C2C5055FE00C106D9 /* Land.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC3B2C5055FE00C106D9 /* Land.swift */; };
@@ -73,6 +73,31 @@
 		4F4ED7462C4C1AD300AE779B /* RequestGalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F4ED7432C4C1AD300AE779B /* RequestGalleryViewController.xib */; };
 		4F4ED7482C4C3D9C00AE779B /* FormHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4ED7472C4C3D9C00AE779B /* FormHelper.swift */; };
 		4F4ED74A2C4C630400AE779B /* Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4ED7492C4C630400AE779B /* Responder.swift */; };
+		4F583B5A2C528A8E00E58893 /* AdvertAppertmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B572C528A8E00E58893 /* AdvertAppertmentViewController.swift */; };
+		4F583B5B2C528A8E00E58893 /* AdvertAppertmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B582C528A8E00E58893 /* AdvertAppertmentViewModel.swift */; };
+		4F583B5C2C528A8E00E58893 /* AdvertAppertmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F583B592C528A8E00E58893 /* AdvertAppertmentViewController.xib */; };
+		4F583B602C528BF200E58893 /* AdvertResidenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B5D2C528BF200E58893 /* AdvertResidenceViewController.swift */; };
+		4F583B612C528BF200E58893 /* AdvertResidenceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B5E2C528BF200E58893 /* AdvertResidenceViewModel.swift */; };
+		4F583B622C528BF200E58893 /* AdvertResidenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F583B5F2C528BF200E58893 /* AdvertResidenceViewController.xib */; };
+		4F583B662C528C4B00E58893 /* AdvertDetachedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B632C528C4B00E58893 /* AdvertDetachedViewController.swift */; };
+		4F583B672C528C4B00E58893 /* AdvertDetachedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B642C528C4B00E58893 /* AdvertDetachedViewModel.swift */; };
+		4F583B682C528C4B00E58893 /* AdvertDetachedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F583B652C528C4B00E58893 /* AdvertDetachedViewController.xib */; };
+		4F583B6A2C52EC7F00E58893 /* FormFieldRequirementsUnwrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B692C52EC7F00E58893 /* FormFieldRequirementsUnwrapper.swift */; };
+		4F583B6C2C52F39200E58893 /* Advert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B6B2C52F39200E58893 /* Advert.swift */; };
+		4F583B6E2C52F52E00E58893 /* AdressPreviewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B6D2C52F52E00E58893 /* AdressPreviewer.swift */; };
+		4F583B712C52FD0D00E58893 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B702C52FD0D00E58893 /* House.swift */; };
+		4F583B732C52FD1600E58893 /* BaseProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B722C52FD1600E58893 /* BaseProducts.swift */; };
+		4F583B752C52FD9C00E58893 /* GalleryPreviewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B742C52FD9C00E58893 /* GalleryPreviewer.swift */; };
+		4F583B792C53940C00E58893 /* HousePreview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F583B782C53940C00E58893 /* HousePreview.xib */; };
+		4F583B7B2C53942A00E58893 /* HousePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B7A2C53942A00E58893 /* HousePreview.swift */; };
+		4F583B7D2C53975600E58893 /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B7C2C53975600E58893 /* Bool.swift */; };
+		4F583B802C539C4F00E58893 /* SiteHousePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B7F2C539C4F00E58893 /* SiteHousePreview.swift */; };
+		4F583B822C539D3300E58893 /* SiteHousePreview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F583B812C539D3300E58893 /* SiteHousePreview.xib */; };
+		4F583B892C53BB5200E58893 /* AdvertLandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B862C53BB5200E58893 /* AdvertLandViewController.swift */; };
+		4F583B8A2C53BB5200E58893 /* AdvertLandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B872C53BB5200E58893 /* AdvertLandViewModel.swift */; };
+		4F583B8B2C53BB5200E58893 /* AdvertLandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F583B882C53BB5200E58893 /* AdvertLandViewController.xib */; };
+		4F583B8E2C53C59E00E58893 /* LandPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B8D2C53C59E00E58893 /* LandPreview.swift */; };
+		4F583B902C53C6DC00E58893 /* LandPreview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F583B8F2C53C6DC00E58893 /* LandPreview.xib */; };
 		4F863B3D2C4BB3DA00CDB51D /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F863B342C4BB3DA00CDB51D /* Montserrat-ExtraBold.ttf */; };
 		4F863B3E2C4BB3DA00CDB51D /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F863B352C4BB3DA00CDB51D /* Montserrat-ExtraLight.ttf */; };
 		4F863B3F2C4BB3DA00CDB51D /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F863B362C4BB3DA00CDB51D /* Montserrat-Black.ttf */; };
@@ -107,9 +132,9 @@
 		4F17DC142C4E5EF100C106D9 /* AdvertPreviewImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertPreviewImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		4F17DC172C4E602200C106D9 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		4F17DC2C2C4E8D9400C106D9 /* PreviewLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLayer.swift; sourceTree = "<group>"; };
-		4F17DC302C4E910D00C106D9 /* Estate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estate.swift; sourceTree = "<group>"; };
+		4F17DC302C4E910D00C106D9 /* EstateProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstateProduct.swift; sourceTree = "<group>"; };
 		4F17DC322C50313A00C106D9 /* Appertment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appertment.swift; sourceTree = "<group>"; };
-		4F17DC342C50552200C106D9 /* SiteHouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteHouse.swift; sourceTree = "<group>"; };
+		4F17DC342C50552200C106D9 /* SiteHouseProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteHouseProduct.swift; sourceTree = "<group>"; };
 		4F17DC362C50554200C106D9 /* Residence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Residence.swift; sourceTree = "<group>"; };
 		4F17DC382C50558700C106D9 /* Detached.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detached.swift; sourceTree = "<group>"; };
 		4F17DC3B2C5055FE00C106D9 /* Land.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Land.swift; sourceTree = "<group>"; };
@@ -160,6 +185,31 @@
 		4F4ED7432C4C1AD300AE779B /* RequestGalleryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestGalleryViewController.xib; sourceTree = "<group>"; };
 		4F4ED7472C4C3D9C00AE779B /* FormHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormHelper.swift; sourceTree = "<group>"; };
 		4F4ED7492C4C630400AE779B /* Responder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responder.swift; sourceTree = "<group>"; };
+		4F583B572C528A8E00E58893 /* AdvertAppertmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertAppertmentViewController.swift; sourceTree = "<group>"; };
+		4F583B582C528A8E00E58893 /* AdvertAppertmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertAppertmentViewModel.swift; sourceTree = "<group>"; };
+		4F583B592C528A8E00E58893 /* AdvertAppertmentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertAppertmentViewController.xib; sourceTree = "<group>"; };
+		4F583B5D2C528BF200E58893 /* AdvertResidenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertResidenceViewController.swift; sourceTree = "<group>"; };
+		4F583B5E2C528BF200E58893 /* AdvertResidenceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertResidenceViewModel.swift; sourceTree = "<group>"; };
+		4F583B5F2C528BF200E58893 /* AdvertResidenceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertResidenceViewController.xib; sourceTree = "<group>"; };
+		4F583B632C528C4B00E58893 /* AdvertDetachedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertDetachedViewController.swift; sourceTree = "<group>"; };
+		4F583B642C528C4B00E58893 /* AdvertDetachedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertDetachedViewModel.swift; sourceTree = "<group>"; };
+		4F583B652C528C4B00E58893 /* AdvertDetachedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertDetachedViewController.xib; sourceTree = "<group>"; };
+		4F583B692C52EC7F00E58893 /* FormFieldRequirementsUnwrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormFieldRequirementsUnwrapper.swift; sourceTree = "<group>"; };
+		4F583B6B2C52F39200E58893 /* Advert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advert.swift; sourceTree = "<group>"; };
+		4F583B6D2C52F52E00E58893 /* AdressPreviewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressPreviewer.swift; sourceTree = "<group>"; };
+		4F583B702C52FD0D00E58893 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		4F583B722C52FD1600E58893 /* BaseProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProducts.swift; sourceTree = "<group>"; };
+		4F583B742C52FD9C00E58893 /* GalleryPreviewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPreviewer.swift; sourceTree = "<group>"; };
+		4F583B782C53940C00E58893 /* HousePreview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HousePreview.xib; sourceTree = "<group>"; };
+		4F583B7A2C53942A00E58893 /* HousePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousePreview.swift; sourceTree = "<group>"; };
+		4F583B7C2C53975600E58893 /* Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
+		4F583B7F2C539C4F00E58893 /* SiteHousePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteHousePreview.swift; sourceTree = "<group>"; };
+		4F583B812C539D3300E58893 /* SiteHousePreview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SiteHousePreview.xib; sourceTree = "<group>"; };
+		4F583B862C53BB5200E58893 /* AdvertLandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertLandViewController.swift; sourceTree = "<group>"; };
+		4F583B872C53BB5200E58893 /* AdvertLandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertLandViewModel.swift; sourceTree = "<group>"; };
+		4F583B882C53BB5200E58893 /* AdvertLandViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertLandViewController.xib; sourceTree = "<group>"; };
+		4F583B8D2C53C59E00E58893 /* LandPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandPreview.swift; sourceTree = "<group>"; };
+		4F583B8F2C53C6DC00E58893 /* LandPreview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandPreview.xib; sourceTree = "<group>"; };
 		4F863B342C4BB3DA00CDB51D /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraBold.ttf"; path = "../../../../Montserrat/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
 		4F863B352C4BB3DA00CDB51D /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraLight.ttf"; path = "../../../../Montserrat/Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
 		4F863B362C4BB3DA00CDB51D /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Black.ttf"; path = "../../../../Montserrat/Montserrat-Black.ttf"; sourceTree = "<group>"; };
@@ -214,8 +264,10 @@
 		4F17DC092C4D567B00C106D9 /* Previews */ = {
 			isa = PBXGroup;
 			children = (
-				4F17DC0A2C4D568700C106D9 /* CarPreview.swift */,
-				4F17DC0C2C4D56C800C106D9 /* CarPreview.xib */,
+				4F583B8C2C53C57400E58893 /* LandPreview */,
+				4F583B7E2C539C4400E58893 /* SiteHousePreview */,
+				4F583B772C5393CA00E58893 /* HousePreview */,
+				4F583B762C53038600E58893 /* CarPreview */,
 			);
 			path = Previews;
 			sourceTree = "<group>";
@@ -241,9 +293,9 @@
 		4F17DC2F2C4E90F100C106D9 /* Estate */ = {
 			isa = PBXGroup;
 			children = (
-				4F17DC302C4E910D00C106D9 /* Estate.swift */,
+				4F17DC302C4E910D00C106D9 /* EstateProduct.swift */,
 				4F17DC382C50558700C106D9 /* Detached.swift */,
-				4F17DC342C50552200C106D9 /* SiteHouse.swift */,
+				4F17DC342C50552200C106D9 /* SiteHouseProduct.swift */,
 				4F17DC322C50313A00C106D9 /* Appertment.swift */,
 				4F17DC362C50554200C106D9 /* Residence.swift */,
 			);
@@ -261,6 +313,9 @@
 		4F17DC3F2C51251000C106D9 /* AdvertHouse */ = {
 			isa = PBXGroup;
 			children = (
+				4F583B562C528A6600E58893 /* Detached */,
+				4F583B552C528A5D00E58893 /* Appertment */,
+				4F583B542C528A3700E58893 /* Residence */,
 				4F17DC402C51254B00C106D9 /* AdvertHouseViewController.swift */,
 				4F17DC422C51254B00C106D9 /* AdvertHouseViewController.xib */,
 				4F17DC412C51254B00C106D9 /* AdvertHouseViewModel.swift */,
@@ -307,6 +362,7 @@
 		4F3790DE2C4A7AE30000987C /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				4F583B852C53BB4700E58893 /* AdvertLand */,
 				4F4ED7212C4C025400AE779B /* AdvertAuto */,
 				4F17DC3F2C51251000C106D9 /* AdvertHouse */,
 				4F17DC022C4D50CB00C106D9 /* AdvertPreview */,
@@ -373,6 +429,11 @@
 				4F4ED72B2C4C045D00AE779B /* View.swift */,
 				4F4ED73E2C4C173B00AE779B /* SafeText.swift */,
 				4F17DC2C2C4E8D9400C106D9 /* PreviewLayer.swift */,
+				4F583B692C52EC7F00E58893 /* FormFieldRequirementsUnwrapper.swift */,
+				4F583B6B2C52F39200E58893 /* Advert.swift */,
+				4F583B6D2C52F52E00E58893 /* AdressPreviewer.swift */,
+				4F583B742C52FD9C00E58893 /* GalleryPreviewer.swift */,
+				4F583B6F2C52FC9000E58893 /* BaseProducts */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -380,14 +441,8 @@
 		4F3790F12C4A80E80000987C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				4F3790F22C4A80F10000987C /* ViewController.swift */,
-				4F8BD6CA2C4B1915002B3D4C /* String.swift */,
-				4F8BD6CF2C4B1ACF002B3D4C /* Color.swift */,
-				4F4ED71D2C4BEEA900AE779B /* TableViewCell.swift */,
-				4F4ED71F2C4BF1C500AE779B /* NSObject.swift */,
-				4F4ED7492C4C630400AE779B /* Responder.swift */,
-				4F17DC0E2C4DB64B00C106D9 /* Date.swift */,
-				4F17DC172C4E602200C106D9 /* CollectionViewCell.swift */,
+				4F583B842C53A05500E58893 /* UIKit */,
+				4F583B832C53A05100E58893 /* Foundation */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -459,6 +514,114 @@
 				4F4ED7422C4C1AD300AE779B /* RequestGalleryViewModel.swift */,
 			);
 			path = RequestGallery;
+			sourceTree = "<group>";
+		};
+		4F583B542C528A3700E58893 /* Residence */ = {
+			isa = PBXGroup;
+			children = (
+				4F583B5D2C528BF200E58893 /* AdvertResidenceViewController.swift */,
+				4F583B5F2C528BF200E58893 /* AdvertResidenceViewController.xib */,
+				4F583B5E2C528BF200E58893 /* AdvertResidenceViewModel.swift */,
+			);
+			path = Residence;
+			sourceTree = "<group>";
+		};
+		4F583B552C528A5D00E58893 /* Appertment */ = {
+			isa = PBXGroup;
+			children = (
+				4F583B572C528A8E00E58893 /* AdvertAppertmentViewController.swift */,
+				4F583B592C528A8E00E58893 /* AdvertAppertmentViewController.xib */,
+				4F583B582C528A8E00E58893 /* AdvertAppertmentViewModel.swift */,
+			);
+			path = Appertment;
+			sourceTree = "<group>";
+		};
+		4F583B562C528A6600E58893 /* Detached */ = {
+			isa = PBXGroup;
+			children = (
+				4F583B632C528C4B00E58893 /* AdvertDetachedViewController.swift */,
+				4F583B652C528C4B00E58893 /* AdvertDetachedViewController.xib */,
+				4F583B642C528C4B00E58893 /* AdvertDetachedViewModel.swift */,
+			);
+			path = Detached;
+			sourceTree = "<group>";
+		};
+		4F583B6F2C52FC9000E58893 /* BaseProducts */ = {
+			isa = PBXGroup;
+			children = (
+				4F583B702C52FD0D00E58893 /* House.swift */,
+				4F583B722C52FD1600E58893 /* BaseProducts.swift */,
+			);
+			path = BaseProducts;
+			sourceTree = "<group>";
+		};
+		4F583B762C53038600E58893 /* CarPreview */ = {
+			isa = PBXGroup;
+			children = (
+				4F17DC0A2C4D568700C106D9 /* CarPreview.swift */,
+				4F17DC0C2C4D56C800C106D9 /* CarPreview.xib */,
+			);
+			path = CarPreview;
+			sourceTree = "<group>";
+		};
+		4F583B772C5393CA00E58893 /* HousePreview */ = {
+			isa = PBXGroup;
+			children = (
+				4F583B7A2C53942A00E58893 /* HousePreview.swift */,
+				4F583B782C53940C00E58893 /* HousePreview.xib */,
+			);
+			path = HousePreview;
+			sourceTree = "<group>";
+		};
+		4F583B7E2C539C4400E58893 /* SiteHousePreview */ = {
+			isa = PBXGroup;
+			children = (
+				4F583B7F2C539C4F00E58893 /* SiteHousePreview.swift */,
+				4F583B812C539D3300E58893 /* SiteHousePreview.xib */,
+			);
+			path = SiteHousePreview;
+			sourceTree = "<group>";
+		};
+		4F583B832C53A05100E58893 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4F8BD6CA2C4B1915002B3D4C /* String.swift */,
+				4F8BD6CF2C4B1ACF002B3D4C /* Color.swift */,
+				4F4ED71F2C4BF1C500AE779B /* NSObject.swift */,
+				4F4ED7492C4C630400AE779B /* Responder.swift */,
+				4F17DC0E2C4DB64B00C106D9 /* Date.swift */,
+				4F583B7C2C53975600E58893 /* Bool.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		4F583B842C53A05500E58893 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				4F3790F22C4A80F10000987C /* ViewController.swift */,
+				4F4ED71D2C4BEEA900AE779B /* TableViewCell.swift */,
+				4F17DC172C4E602200C106D9 /* CollectionViewCell.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		4F583B852C53BB4700E58893 /* AdvertLand */ = {
+			isa = PBXGroup;
+			children = (
+				4F583B862C53BB5200E58893 /* AdvertLandViewController.swift */,
+				4F583B882C53BB5200E58893 /* AdvertLandViewController.xib */,
+				4F583B872C53BB5200E58893 /* AdvertLandViewModel.swift */,
+			);
+			path = AdvertLand;
+			sourceTree = "<group>";
+		};
+		4F583B8C2C53C57400E58893 /* LandPreview */ = {
+			isa = PBXGroup;
+			children = (
+				4F583B8D2C53C59E00E58893 /* LandPreview.swift */,
+				4F583B8F2C53C6DC00E58893 /* LandPreview.xib */,
+			);
+			path = LandPreview;
 			sourceTree = "<group>";
 		};
 		4F863B332C4BB3C000CDB51D /* Fonts */ = {
@@ -570,6 +733,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F17DC152C4E5EF100C106D9 /* AdvertPreviewImageCollectionViewCell.xib in Resources */,
+				4F583B792C53940C00E58893 /* HousePreview.xib in Resources */,
 				4F17DC432C51254B00C106D9 /* AdvertHouseViewController.xib in Resources */,
 				4F3790D42C4A7A960000987C /* Assets.xcassets in Resources */,
 				4F863B422C4BB3DA00CDB51D /* Montserrat-SemiBold.ttf in Resources */,
@@ -577,16 +741,22 @@
 				4F17DC0D2C4D56C800C106D9 /* CarPreview.xib in Resources */,
 				4F863B3D2C4BB3DA00CDB51D /* Montserrat-ExtraBold.ttf in Resources */,
 				4F863B402C4BB3DA00CDB51D /* Montserrat-Light.ttf in Resources */,
+				4F583B8B2C53BB5200E58893 /* AdvertLandViewController.xib in Resources */,
 				4F17DC062C4D50DF00C106D9 /* AdvertPreviewViewController.xib in Resources */,
 				4F0D0A132C4BA8A600427C78 /* AdvertTableViewCell.xib in Resources */,
 				4F863B452C4BB3DA00CDB51D /* Montserrat-Bold.ttf in Resources */,
+				4F583B682C528C4B00E58893 /* AdvertDetachedViewController.xib in Resources */,
 				4F863B3E2C4BB3DA00CDB51D /* Montserrat-ExtraLight.ttf in Resources */,
+				4F583B902C53C6DC00E58893 /* LandPreview.xib in Resources */,
 				4F4ED7272C4C02C400AE779B /* AdvertAutoFirstStepViewController.xib in Resources */,
 				4F3790D72C4A7A960000987C /* Base in Resources */,
+				4F583B5C2C528A8E00E58893 /* AdvertAppertmentViewController.xib in Resources */,
 				4F4ED7462C4C1AD300AE779B /* RequestGalleryViewController.xib in Resources */,
 				4F4ED7332C4C086800AE779B /* AdressViewController.xib in Resources */,
+				4F583B822C539D3300E58893 /* SiteHousePreview.xib in Resources */,
 				4F8BD6AE2C4B15C4002B3D4C /* AdvertViewController.xib in Resources */,
 				4F4ED73A2C4C136C00AE779B /* SelectFormViewController.xib in Resources */,
+				4F583B622C528BF200E58893 /* AdvertResidenceViewController.xib in Resources */,
 				4F863B412C4BB3DA00CDB51D /* Montserrat-Regular.ttf in Resources */,
 				4F863B442C4BB3DA00CDB51D /* Montserrat-Medium.ttf in Resources */,
 				4F863B432C4BB3DA00CDB51D /* Montserrat-Thin.ttf in Resources */,
@@ -601,17 +771,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F583B6A2C52EC7F00E58893 /* FormFieldRequirementsUnwrapper.swift in Sources */,
 				4F4ED72C2C4C045D00AE779B /* View.swift in Sources */,
+				4F583B602C528BF200E58893 /* AdvertResidenceViewController.swift in Sources */,
+				4F583B612C528BF200E58893 /* AdvertResidenceViewModel.swift in Sources */,
 				4F3790FB2C4A98840000987C /* Vehicle.swift in Sources */,
 				4F17DC2D2C4E8D9400C106D9 /* PreviewLayer.swift in Sources */,
 				4F3790EE2C4A7DC90000987C /* AlertPresentable.swift in Sources */,
 				4F8BD6CB2C4B1915002B3D4C /* String.swift in Sources */,
 				4F4ED7182C4BD7F500AE779B /* ProductCategory.swift in Sources */,
 				4F3790D22C4A7A940000987C /* Swap.xcdatamodeld in Sources */,
+				4F583B892C53BB5200E58893 /* AdvertLandViewController.swift in Sources */,
+				4F583B8A2C53BB5200E58893 /* AdvertLandViewModel.swift in Sources */,
+				4F583B752C52FD9C00E58893 /* GalleryPreviewer.swift in Sources */,
 				4F17DC162C4E5EF100C106D9 /* AdvertPreviewImageCollectionViewCell.swift in Sources */,
+				4F583B6E2C52F52E00E58893 /* AdressPreviewer.swift in Sources */,
 				4F4ED7312C4C086800AE779B /* AdressViewController.swift in Sources */,
 				4F4ED7322C4C086800AE779B /* AdressViewModel.swift in Sources */,
 				4F4ED72A2C4C042C00AE779B /* ONFormField.swift in Sources */,
+				4F583B732C52FD1600E58893 /* BaseProducts.swift in Sources */,
 				4F8BD6CE2C4B197C002B3D4C /* DefaultHeaderView.swift in Sources */,
 				4F17DC372C50554200C106D9 /* Residence.swift in Sources */,
 				4F4ED71C2C4BE04500AE779B /* CategoryImplementer.swift in Sources */,
@@ -620,17 +798,21 @@
 				4F4ED71A2C4BD88700AE779B /* Describer.swift in Sources */,
 				4F3790F32C4A80F10000987C /* ViewController.swift in Sources */,
 				4F3790F02C4A7FBA0000987C /* XibNameProvider.swift in Sources */,
+				4F583B7B2C53942A00E58893 /* HousePreview.swift in Sources */,
+				4F583B802C539C4F00E58893 /* SiteHousePreview.swift in Sources */,
 				4F4ED7442C4C1AD300AE779B /* RequestGalleryViewController.swift in Sources */,
 				4F4ED7452C4C1AD300AE779B /* RequestGalleryViewModel.swift in Sources */,
 				4F4ED71E2C4BEEA900AE779B /* TableViewCell.swift in Sources */,
 				4F17DC0F2C4DB64B00C106D9 /* Date.swift in Sources */,
 				4F4ED7382C4C136C00AE779B /* SelectFormViewController.swift in Sources */,
+				4F583B712C52FD0D00E58893 /* House.swift in Sources */,
 				4F4ED7392C4C136C00AE779B /* SelectFormViewModel.swift in Sources */,
 				4F3790F92C4A95D40000987C /* Product.swift in Sources */,
 				4F3790E32C4A7C320000987C /* BaseViewModel.swift in Sources */,
 				4F17DC072C4D50DF00C106D9 /* AdvertPreviewViewController.swift in Sources */,
 				4F17DC082C4D50DF00C106D9 /* AdvertPreviewViewModel.swift in Sources */,
 				4F3791012C4AA2420000987C /* HomeViewController.swift in Sources */,
+				4F583B8E2C53C59E00E58893 /* LandPreview.swift in Sources */,
 				4F8BD6C92C4B18BD002B3D4C /* BaseButton.swift in Sources */,
 				4F17DC442C51254B00C106D9 /* AdvertHouseViewController.swift in Sources */,
 				4F17DC452C51254B00C106D9 /* AdvertHouseViewModel.swift in Sources */,
@@ -642,6 +824,8 @@
 				4F3791022C4AA2420000987C /* HomeViewModel.swift in Sources */,
 				4F8BD6D02C4B1ACF002B3D4C /* Color.swift in Sources */,
 				4F3790E12C4A7B270000987C /* BaseViewController.swift in Sources */,
+				4F583B662C528C4B00E58893 /* AdvertDetachedViewController.swift in Sources */,
+				4F583B672C528C4B00E58893 /* AdvertDetachedViewModel.swift in Sources */,
 				4F17DC3C2C5055FE00C106D9 /* Land.swift in Sources */,
 				4F3790F72C4A91690000987C /* Car.swift in Sources */,
 				4F4ED74A2C4C630400AE779B /* Responder.swift in Sources */,
@@ -649,16 +833,20 @@
 				4F4ED73F2C4C173B00AE779B /* SafeText.swift in Sources */,
 				4F8BD6AF2C4B15C4002B3D4C /* AdvertViewController.swift in Sources */,
 				4F17DBFF2C4D0E1200C106D9 /* BaseForm.swift in Sources */,
-				4F17DC352C50552200C106D9 /* SiteHouse.swift in Sources */,
+				4F583B6C2C52F39200E58893 /* Advert.swift in Sources */,
+				4F17DC352C50552200C106D9 /* SiteHouseProduct.swift in Sources */,
 				4F17DC012C4D0E3B00C106D9 /* OFFormField.swift in Sources */,
 				4F4ED7482C4C3D9C00AE779B /* FormHelper.swift in Sources */,
-				4F17DC312C4E910D00C106D9 /* Estate.swift in Sources */,
+				4F583B5A2C528A8E00E58893 /* AdvertAppertmentViewController.swift in Sources */,
+				4F583B5B2C528A8E00E58893 /* AdvertAppertmentViewModel.swift in Sources */,
+				4F17DC312C4E910D00C106D9 /* EstateProduct.swift in Sources */,
 				4F17DC0B2C4D568700C106D9 /* CarPreview.swift in Sources */,
 				4F8BD6B02C4B15C4002B3D4C /* AdvertViewModel.swift in Sources */,
 				4F3790F52C4A82EC0000987C /* Organizer.swift in Sources */,
 				4F17DC392C50558700C106D9 /* Detached.swift in Sources */,
 				4F8BD6C72C4B188C002B3D4C /* BaseView.swift in Sources */,
 				4F3790C82C4A7A940000987C /* AppDelegate.swift in Sources */,
+				4F583B7D2C53975600E58893 /* Bool.swift in Sources */,
 				4F17DC332C50313A00C106D9 /* Appertment.swift in Sources */,
 				4F3790CA2C4A7A940000987C /* SceneDelegate.swift in Sources */,
 			);

@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class AdvertAutoFirstStepViewController: UIViewController, AlertPresentable {
+final class AdvertAutoFirstStepViewController: UIViewController, AlertPresentable, FormFieldRequirementsUnwrapper {
     
     var viewModel: AdvertAutoFirstStepViewModel!
 
@@ -83,10 +83,6 @@ final class AdvertAutoFirstStepViewController: UIViewController, AlertPresentabl
       }
   }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-    }
 
   // MARK: - IBActions
     @IBAction func tappedBackButton(_ sender: Any) {
@@ -117,31 +113,14 @@ final class AdvertAutoFirstStepViewController: UIViewController, AlertPresentabl
         
     }
     
-    private func wrappedValue() -> Bool {
-        var value: Bool = true
-        for index in 0..<allFields.count {
-            let element = allFields[index]
-            
-            if element.safeText() == nil {
-                element.falseFormat()
-                showAlert(with: "Lütfen boş alanları doldurun.") { element.reset() }
-                value = false
-                break
-            }
-        }
-        return value
-    }
-    
 }
 
 
 
 // MARK: - ViewModel Delegate -
-extension AdvertAutoFirstStepViewController: AdvertAutoFirstStepViewModel.Delegate {
+extension AdvertAutoFirstStepViewController: AdvertAutoFirstStepViewModel.Delegate, AdressPreviewer {
     func basicsInfoRequirementsSuccess() {
-        let vc = AdressViewController.create()
-        vc.delegate = self
-        navigationController?.pushViewController(vc, animated: true)
+        previewAdress()
     }
     
     func createAdvertAutoProductSuccess(_ product: CarProduct, with images: [UIImage]) {
@@ -151,7 +130,7 @@ extension AdvertAutoFirstStepViewController: AdvertAutoFirstStepViewModel.Delega
 }
 
 //MARK: -> RequestGalleryViewController Delegate
-extension AdvertAutoFirstStepViewController: RequestGalleryViewController.Delegate {
+extension AdvertAutoFirstStepViewController: RequestGalleryViewController.Delegate, GalleryPreviewer {
     func didFinishSelectImage(with images: [UIImage]) {
         viewModel.pickImageSuccess(images)
         
@@ -163,9 +142,7 @@ extension AdvertAutoFirstStepViewController: RequestGalleryViewController.Delega
 extension AdvertAutoFirstStepViewController: AdressViewController.Delegate {
     func readyAdressContent(_ adress: AdressViewModel.Adress) {
         viewModel.adress = adress
-        let vc = RequestGalleryViewController()
-        vc.delegate = self
-        present(vc, animated: true)
+        previewGallery()
     }
 }
 

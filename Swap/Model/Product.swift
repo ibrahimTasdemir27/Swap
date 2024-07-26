@@ -42,12 +42,15 @@ class Product: BaseProductImplementer, Codable {
     let listingDate: String
     let timestamp: Int
     let adress: AdressViewModel.Adress
-    let category: String
     let categoryArray: [String]
     let images: [String]
     
     
-    init(id: String = UUID().uuidString, heading: String, description: String, seller: ProductSeller, listingDate: String = Date().toStringSmall(), timestamp: Int = Date.getTimeStamp(), adress: AdressViewModel.Adress, category: String, categoryArray: [String], images: [String]) {
+    var categoryStrings: String {
+        return categoryArray.joined(separator: " > ")
+    }
+    
+    init(id: String = UUID().uuidString, heading: String, description: String, seller: ProductSeller, listingDate: String = Date().toStringSmall(), timestamp: Int = Date.getTimeStamp(), adress: AdressViewModel.Adress, categoryArray: [String], images: [String]) {
         self.id = id
         self.heading = heading
         self.description = description
@@ -56,7 +59,6 @@ class Product: BaseProductImplementer, Codable {
         self.timestamp = timestamp
         self.adress = adress
         self.categoryArray = categoryArray
-        self.category = category
         self.images = images
     }
     
@@ -69,7 +71,6 @@ class Product: BaseProductImplementer, Codable {
         self.timestamp = product.timestamp
         self.adress = product.adress
         self.categoryArray = product.categoryArray
-        self.category = product.category
         self.images = product.images
     }
 

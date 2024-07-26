@@ -7,18 +7,21 @@
 
 import Foundation
 
-class Land: Product {
+class LandProduct: Product {
+    let type: String = "Arsa"
     let zoneState: ZoneState
     let sqft: Int
-    let islandNo: Int
-    let parcelNo: Int
-    let sectionNo: Int
-    let kaks: KAKS
-    let sizeLimit: SizeLimitBuilding
+    let islandNo: Int?
+    let parcelNo: Int?
+    let sectionNo: String?
+    let kaks: KAKS?
+    let sizeLimit: SizeLimitBuilding?
     let perfloor: Bool
+    let landRegister: LandRegisterStatus
     
     
-    init(product: Product, zoneState: ZoneState, sqft: Int, islandNo: Int, parcelNo: Int, sectionNo: Int, kaks: KAKS, sizeLimit: SizeLimitBuilding, perfloor: Bool) {
+    
+    init(product: Product, zoneState: ZoneState, sqft: Int, islandNo: Int?, parcelNo: Int?, sectionNo: String?, kaks: KAKS?, sizeLimit: SizeLimitBuilding?, perfloor: Bool, landRegister: LandRegisterStatus) {
         self.zoneState = zoneState
         self.sqft = sqft
         self.islandNo = islandNo
@@ -27,11 +30,12 @@ class Land: Product {
         self.kaks = kaks
         self.sizeLimit = sizeLimit
         self.perfloor = perfloor
+        self.landRegister = landRegister
         super.init(product: product)
     }
     
     private enum CodingKeys: CodingKey {
-        case zoneState, sqft, islandNo, parcelNo, sectionNo, kaks, sizeLimit, perfloor
+        case zoneState, sqft, islandNo, parcelNo, sectionNo, kaks, sizeLimit, perfloor, landRegister
     }
     
     required init(from decoder: any Decoder) throws {
@@ -40,15 +44,32 @@ class Land: Product {
         sqft = try container.decode(Int.self, forKey: .sqft)
         islandNo = try container.decode(Int.self, forKey: .islandNo)
         parcelNo = try container.decode(Int.self, forKey: .parcelNo)
-        sectionNo = try container.decode(Int.self, forKey: .sectionNo)
+        sectionNo = try container.decode(String.self, forKey: .sectionNo)
         kaks = try container.decode(KAKS.self, forKey: .kaks)
         sizeLimit = try container.decode(SizeLimitBuilding.self, forKey: .sizeLimit)
         perfloor = try container.decode(Bool.self, forKey: .perfloor)
+        landRegister = try container.decode(LandRegisterStatus.self, forKey: .landRegister)
         try super.init(from: decoder)
     }
 }
 
-@frozen enum SizeLimitBuilding: Describer, CaseIterable, Codable {
+enum LandRegisterStatus: String, Describer, CaseIterable, Codable {
+    case shareholders
+    case detached
+    case allocation
+    case possession
+    
+    func describe() -> String {
+        switch self {
+        case .shareholders:            return "Hisseli Tapu"
+        case .detached:                return "Müstakil Parsel"
+        case .allocation:              return "Tahsis"
+        case .possession:              return "Zilliyet"
+        }
+    }
+}
+
+enum SizeLimitBuilding: String, Describer, CaseIterable, Codable {
     case threefifty
     case sixfifty
     case sevenfifty

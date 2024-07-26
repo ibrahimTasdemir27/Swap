@@ -9,6 +9,6 @@ import Foundation
 
 
 
-class Appertment: SiteHouse {
+class Appertment: SiteHouseProduct {
     
 }

@@ -7,6 +7,6 @@
 
 import Foundation
 
-class Detached: Estate {
+class Detached: EstateProduct {
     
 }

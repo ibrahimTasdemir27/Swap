@@ -8,7 +8,7 @@
 import Foundation
 
 /* Bulunduğu kat - Otopark */
-class Estate: Product {
+class EstateProduct: Product {
     let type: HouseType
     let sqftGrand: Int
     let sqftReal: Int
@@ -21,9 +21,9 @@ class Estate: Product {
     let lift: Bool
     let furniture: Bool
     let status: EstateState
-    let landRegister: LandRegisterStatus
+    let landRegister: EstateLandRegisterStatus
     
-    init(product: Product, type: HouseType, sqftGrand: Int, sqftReal: Int, room: Room, age: Int, floor: Int, heating: HeatingType, bath: Int, balcony: Bool, lift: Bool, furniture: Bool, status: EstateState, landRegister: LandRegisterStatus) {
+    init(product: Product, type: HouseType, sqftGrand: Int, sqftReal: Int, room: Room, age: Int, floor: Int, heating: HeatingType, bath: Int, balcony: Bool, lift: Bool, furniture: Bool, status: EstateState, landRegister: EstateLandRegisterStatus) {
         self.type = type
         self.sqftGrand = sqftGrand
         self.sqftReal = sqftReal
@@ -40,7 +40,7 @@ class Estate: Product {
         super.init(product: product)
     }
     
-    init(estate: Estate) {
+    init(estate: EstateProduct) {
         self.type = estate.type
         self.sqftGrand = estate.sqftGrand
         self.sqftReal = estate.sqftReal
@@ -75,7 +75,7 @@ class Estate: Product {
         lift = try container.decode(Bool.self, forKey: .lift)
         furniture = try container.decode(Bool.self, forKey: .furniture)
         status = try container.decode(EstateState.self, forKey: .status)
-        landRegister = try container.decode(LandRegisterStatus.self, forKey: .landRegister)
+        landRegister = try container.decode(EstateLandRegisterStatus.self, forKey: .landRegister)
         try super.init(from: decoder)
     }
 
@@ -84,7 +84,7 @@ class Estate: Product {
 
 
 
-enum LandRegisterStatus: Describer, CaseIterable, Codable {
+enum EstateLandRegisterStatus: Describer, CaseIterable, Codable {
     case floor
     case easement
     case shareholder
@@ -171,7 +171,7 @@ enum HouseType: String, Describer, CaseIterable, Codable {
 extension HouseType: CategoryImplementer {
     static func allData() -> [String : Any] {
         return HouseType.allCases.reduce(into: [String: Any]()) { partialResult, house in
-            partialResult[house.describe()] = Finalizer(rawValue: house.rawValue)?.describe()
+            partialResult[house.describe()] = Finalizer(rawValue: house.rawValue)
         }
     }
     
@@ -304,6 +304,10 @@ extension EstateType: CategoryImplementer {
     static func allData() -> [String : Any] {
         return allCases.reduce(into: [String: Any]()) { partialResult, type in
             partialResult[type.describe()] = type.getChilds()
+            if type == .land {
+                partialResult[type.describe()] = Finalizer.land
+            }
+            
         }
     }
     
@@ -317,7 +321,7 @@ extension EstateType: CategoryImplementer {
             return HouseType.allData()
         case .land:
             //Arsa ->
-            return [Finalizer.land.describe() : Finalizer.land]
+            return [:]
         }
     }
     

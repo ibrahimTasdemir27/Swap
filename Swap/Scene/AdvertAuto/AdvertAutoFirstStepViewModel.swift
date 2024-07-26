@@ -8,13 +8,13 @@
 import UIKit
 
 
-
-final class AdvertAutoFirstStepViewModel: BaseViewModel {
+final class AdvertAutoFirstStepViewModel: BaseViewModel, AdvertPresentable {
+    typealias AdvertType = CarProduct
     
-    let mock = CarProduct(vehicle: .init(product: .init(heading: "Sahibinden Hatasız Araç", description: "Tertemiz aracım. Sanayinin yanından geçmemiş araç.", seller: .init(id: "id", name: "İbrahim Halil Taşdemir", type: .company, phone: "+905530511443"), adress: .init(country: "Türkiye", city: "Gaziantep", town: "Şehitkamil", district: "Çıksorut", quarter: "Şirinevler"), category: "Taşıtlar > Otomobil > Renault > Clio > 0.9 Sport Tourer", categoryArray: ["Taşıtlar", "Otomobil", "Renault", "Clio", "0.9 Sport Tourer"], images: []), type: .automobile), brand: .renault, series: .clio, model: "0.9 Sport Tourer", year: 2020, fuel: .diesel, caseType: .sedan, shift: .automatic, traction: .behind, status: .second, kilometer: "240.000", power: "150hp", color: .white, guarantee: true, seriousDamageRegistered: true)
     
-    protocol Delegate: AnyObject {
-        func basicsInfoRequirementsSuccess()
+    let mock = CarProduct(vehicle: .init(product: .init(heading: "Sahibinden Hatasız Araç", description: "Tertemiz aracım. Sanayinin yanından geçmemiş araç.", seller: .init(id: "id", name: "İbrahim Halil Taşdemir", type: .company, phone: "+905530511443"), adress: .init(country: "Türkiye", city: "Gaziantep", town: "Şehitkamil", district: "Çıksorut", quarter: "Şirinevler"), categoryArray: ["Taşıtlar", "Otomobil", "Renault", "Clio", "0.9 Sport Tourer"], images: []), type: .automobile), brand: .renault, series: .clio, model: "0.9 Sport Tourer", year: 2020, fuel: .diesel, caseType: .sedan, shift: .automatic, traction: .behind, status: .second, kilometer: "240.000", power: "150hp", color: .white, guarantee: true, seriousDamageRegistered: true)
+    
+    protocol Delegate: AdvertPropertyProvider {
         func createAdvertAutoProductSuccess(_ product: CarProduct, with images: [UIImage])
     }
     
@@ -64,7 +64,22 @@ final class AdvertAutoFirstStepViewModel: BaseViewModel {
     }
     
     
-    func pickImageSuccess(_ images: [UIImage]) {
+    /*
+     Temel bilgileri girdi,
+     Kontrolü sağlandı,
+     Adres adımına yönlendirildi,
+     Adres alındı,
+     Resim seçme adımına yönlendirildi
+     
+     Şimdi burada protokol adımları uygulamamalı
+     durumları uygulamalı
+     
+     yani basicInfoyu aldı
+     bir de modeli oluşturucak
+     
+     */
+    
+    func createAdvert() -> CarProduct? {
         guard
             let advertHeadingField = advertHeadingField,
             let advertDescriptionField = advertDescriptionField,
@@ -80,11 +95,11 @@ final class AdvertAutoFirstStepViewModel: BaseViewModel {
             let guarenteField = guarenteField,
             let seriousDamageField = seriousDamageField,
             let adress = adress else {
-            return
+            return nil
         }
         
         
-        let product = Product(heading: advertHeadingField, description: advertDescriptionField, seller: .init(id: "id", name: "İbrahim Halil Taşdemir", type: .individual, phone: "+905530511443"), adress: adress, category: categorys.joined(separator: " > "), categoryArray: categorys, images: [])
+        let product = Product(heading: advertHeadingField, description: advertDescriptionField, seller: .init(id: "id", name: "İbrahim Halil Taşdemir", type: .individual, phone: "+905530511443"), adress: adress, categoryArray: categorys, images: [])
         let vehicle = Vehicle(product: product, type: .automobile)
         
         
@@ -97,8 +112,15 @@ final class AdvertAutoFirstStepViewModel: BaseViewModel {
         
         let carProduct = CarProduct(vehicle: vehicle, brand: brand, series: series, model: model, year: yearField, fuel: fuelTypeField, caseType: caseTypeField, shift: shiftTypeField, traction: tractionTypeField, status: .second, kilometer: kilometerField, power: powerField, color: colorField, guarantee: guarenteField, seriousDamageRegistered: seriousDamageField)
         
+        return carProduct
+    }
+    
+    func pickImageSuccess(_ images: [UIImage]) {
+        guard let advert = createAdvert() else {
+            return
+        }
         
-        delegate?.createAdvertAutoProductSuccess(carProduct, with: images)
+        delegate?.createAdvertAutoProductSuccess(advert, with: images)
         
     }
     

@@ -15,6 +15,15 @@ enum FormTypeEnum {
     case tractionType
     case fuelType
     case color
+    case room
+    case autopark
+    case heating
+    case estatestate
+    case houselandregister
+    case landregister
+    case zonestate
+    case kaks
+    case sizelimit
     case yesno(raw: String)
     
     func getForm() -> [String: Any] {
@@ -99,6 +108,95 @@ enum FormTypeEnum {
             
             
             
+            
+            
+            
+            
+            //MARK: -> Oda Sayısı
+        case .room:
+            return Room.allCases.reduce(into: [String: Any]()) { partialResult, room in
+                partialResult[room.describe()] = room
+            }
+            
+            
+            
+            
+            
+            //MARK: -> Otopark
+        case .autopark:
+            return AutoPark.allCases.reduce(into: [String: Any]()) { partialResult, autopark in
+                partialResult[autopark.describe()] = autopark
+            }
+            
+            
+            
+            //MARK: -> Isıtma
+        case .heating:
+            return HeatingType.allCases.reduce(into: [String: Any]()) { partialResult, heating in
+                partialResult[heating.describe()] = heating
+            }
+            
+            
+            
+            
+        
+            
+            
+            //MARK: -> Kullanım durumu
+        case .estatestate:
+            return EstateState.allCases.reduce(into: [String: Any]()) { partialResult, estate in
+                partialResult[estate.describe()] = estate
+            }
+            
+            
+            
+            
+            
+            //MARK: -> Ev Tapu Durumu
+        case .houselandregister:
+            return EstateLandRegisterStatus.allCases.reduce(into: [String: Any]()) { partialResult, landRegister in
+                partialResult[landRegister.describe()] = landRegister
+            }
+            
+            
+            
+            
+            
+            
+            //MARK: -> Tapu Durumu
+        case .landregister:
+            return LandRegisterStatus.allCases.reduce(into: [String: Any]()) { partialResult, landRegister in
+                partialResult[landRegister.describe()] = landRegister
+            }
+            
+            
+            
+            
+            
+            //MARK: -> İmar durumu
+        case .zonestate:
+            return ZoneState.allCases.reduce(into: [String: Any]()) { partialResult, zoneState in
+                partialResult[zoneState.describe()] = zoneState
+            }
+            
+            
+            
+            
+            
+            //MARK: -> KAKS (Emsal)
+        case .kaks:
+            return KAKS.allCases.reduce(into: [String: Any]()) { partialResult, kaks in
+                partialResult[kaks.describe()] = kaks
+            }
+            
+            
+            
+            
+            //MARK: -> Gabari
+        case .sizelimit:
+            return SizeLimitBuilding.allCases.reduce(into: [String: Any]()) { partialResult, sizeLimit in
+                partialResult[sizeLimit.describe()] = sizeLimit
+            }
             
             
             
