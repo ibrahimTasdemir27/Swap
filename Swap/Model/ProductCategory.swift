@@ -10,6 +10,7 @@ import Foundation
 enum ProductCategory: String, Codable, CaseIterable, CategoryImplementer {
     case vehicle
     case estate
+    case electronic
     
 }
 
@@ -30,6 +31,8 @@ extension ProductCategory {
             return VehicleType.allData()
         case .estate:
             return EstateType.allData()
+        case .electronic:
+            return ElectronicProductEnvironment.ElectronicCategory.allData()
             
         }
     }
@@ -40,6 +43,8 @@ extension ProductCategory {
             return "Taşıt"
         case .estate:
             return "Emlak"
+        case .electronic:
+            return "Elektronik"
             //        case .land:
             //            return "Emlak"
         }
@@ -57,3 +62,4 @@ extension ProductCategory {
  
  
  */
+

@@ -35,9 +35,12 @@ extension Date {
         return formatter.string(from: self)
     }
     
-    func toString(format: String = "yyyy.MM.dd HH:mm") -> String {
+    func toString(format: String = "yyyy.MM.dd HH:mm", isLocalized: Bool = false) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = format
+        if isLocalized {
+            formatter.locale = Locale(identifier: "tr")
+        }
         return formatter.string(from: self)
     }
 }

@@ -100,3 +100,4 @@ enum ProductColor: String, Codable, CaseIterable, Describer {
     }
     
 }
+

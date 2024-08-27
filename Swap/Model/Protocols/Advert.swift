@@ -7,7 +7,8 @@
 
 import UIKit
 
-protocol AdvertPresentable {
+
+protocol AdvertPresentable: BaseProducts.Product {
     associatedtype AdvertType: Product
     func setupBasicInfo()
     func createAdvert() -> AdvertType?
@@ -15,12 +16,16 @@ protocol AdvertPresentable {
 }
 
 extension AdvertPresentable {
+    
     func pickImageSuccess(_ images: [UIImage]) {
         fatalError("Did you know this not implemented")
     }
 }
 
-protocol AdvertPropertyProvider: AnyObject {
-    func basicsInfoRequirementsSuccess()
-}
+
+//extension AdvertPropertyProvider {
+//    func basicsInfoRequirementsSuccess() {
+//        fatalError("Did you know this not implemented \(#function)")
+//    }
+//}
 

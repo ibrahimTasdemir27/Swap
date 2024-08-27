@@ -73,17 +73,37 @@ extension AdvertViewController: AdvertViewModelDelegate {
         navigationController?.pushViewController(vc, animated: true)
     }
 
-    
     func redirectAdvertLand() {
         let vc = AdvertLandViewController.create(categorys: viewModel.selectedContents)
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    func redirectAdvertDesktop() {
+        let vc = AdvertDesktopViewController.create(categorys: viewModel.selectedContents)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func redirectAdvertNotebook() {
+        let vc = AdvertNotebookViewController.create(categorys: viewModel.selectedContents)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    func redirectUncategorized() {
+        let vc = UncategorizedViewController.create(categorys: viewModel.selectedContents)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }
 
 //MARK: -> AdvertTableViewCell Delegate
 extension AdvertViewController: AdvertTableViewCell.Delegate {
     func didSelectCategoryElement(key: String, for indexPath: IndexPath) {
-        if let subContent = viewModel.categoryContent[key] as? [String: Any] {
+        if let stringKey = (viewModel.categoryContent[key] as? [String: Any])?.keys.first, let finalizer = Finalizer(rawValue: stringKey) {
+            //Finish
+            viewModel.finalizeCategory(finalizer, with: key)
+        } else if let subContent = viewModel.categoryContent[key] as? [String: Any] {
             //Emlak -> Araba -> Renault -> Clio -> 1.9 -> #Finalize
             let vc = AdvertViewController.create(with: subContent, selectedContents: viewModel.selectedContents + [key])
             navigationController?.pushViewController(vc, animated: true)

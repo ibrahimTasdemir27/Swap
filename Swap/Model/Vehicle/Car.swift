@@ -109,7 +109,7 @@ class CarProduct: Vehicle {
     let kilometer: String
     let power: String
     let color: ProductColor
-    let guarentee: Bool
+    let guarantee: Bool
     let seriousDamageRegistered: Bool
     
     init(vehicle: Vehicle, brand: CarBrand, series: Car, model: String, year: Int, fuel: CarFuelType, caseType: CarCaseType, shift: CarShiftType, traction: CarTractionType, status: ProductStatus, kilometer: String, power: String, color: ProductColor, guarantee: Bool, seriousDamageRegistered: Bool) {
@@ -125,13 +125,13 @@ class CarProduct: Vehicle {
         self.kilometer = kilometer
         self.power = power
         self.color = color
-        self.guarentee = guarantee
+        self.guarantee = guarantee
         self.seriousDamageRegistered = seriousDamageRegistered
         super.init(vehicle: vehicle)
     }
     
     private enum CodingKeys: CodingKey {
-        case brand, series, model, year, fuel, caseType, shift, traction, status, kilometer, power, color, guarentee, seriousDamageRegistered
+        case brand, series, model, year, fuel, caseType, shift, traction, status, kilometer, power, color, guarantee, seriousDamageRegistered
     }
     
     
@@ -149,7 +149,7 @@ class CarProduct: Vehicle {
         kilometer = try container.decode(String.self, forKey: .kilometer)
         power = try container.decode(String.self, forKey: .power)
         color = try container.decode(ProductColor.self, forKey: .color)
-        guarentee = try container.decode(Bool.self, forKey: .guarentee)
+        guarantee = try container.decode(Bool.self, forKey: .guarantee)
         seriousDamageRegistered = try container.decode(Bool.self, forKey: .seriousDamageRegistered)
         try super.init(from: decoder)
     }

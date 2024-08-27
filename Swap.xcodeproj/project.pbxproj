@@ -26,7 +26,7 @@
 		4F17DC352C50552200C106D9 /* SiteHouseProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC342C50552200C106D9 /* SiteHouseProduct.swift */; };
 		4F17DC372C50554200C106D9 /* Residence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC362C50554200C106D9 /* Residence.swift */; };
 		4F17DC392C50558700C106D9 /* Detached.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC382C50558700C106D9 /* Detached.swift */; };
-		4F17DC3C2C5055FE00C106D9 /* Land.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC3B2C5055FE00C106D9 /* Land.swift */; };
+		4F17DC3C2C5055FE00C106D9 /* LandProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC3B2C5055FE00C106D9 /* LandProduct.swift */; };
 		4F17DC3E2C511FEE00C106D9 /* Finalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC3D2C511FEE00C106D9 /* Finalizer.swift */; };
 		4F17DC432C51254B00C106D9 /* AdvertHouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F17DC422C51254B00C106D9 /* AdvertHouseViewController.xib */; };
 		4F17DC442C51254B00C106D9 /* AdvertHouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17DC402C51254B00C106D9 /* AdvertHouseViewController.swift */; };
@@ -98,15 +98,6 @@
 		4F583B8B2C53BB5200E58893 /* AdvertLandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F583B882C53BB5200E58893 /* AdvertLandViewController.xib */; };
 		4F583B8E2C53C59E00E58893 /* LandPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F583B8D2C53C59E00E58893 /* LandPreview.swift */; };
 		4F583B902C53C6DC00E58893 /* LandPreview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F583B8F2C53C6DC00E58893 /* LandPreview.xib */; };
-		4F863B3D2C4BB3DA00CDB51D /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F863B342C4BB3DA00CDB51D /* Montserrat-ExtraBold.ttf */; };
-		4F863B3E2C4BB3DA00CDB51D /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F863B352C4BB3DA00CDB51D /* Montserrat-ExtraLight.ttf */; };
-		4F863B3F2C4BB3DA00CDB51D /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F863B362C4BB3DA00CDB51D /* Montserrat-Black.ttf */; };
-		4F863B402C4BB3DA00CDB51D /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F863B372C4BB3DA00CDB51D /* Montserrat-Light.ttf */; };
-		4F863B412C4BB3DA00CDB51D /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F863B382C4BB3DA00CDB51D /* Montserrat-Regular.ttf */; };
-		4F863B422C4BB3DA00CDB51D /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F863B392C4BB3DA00CDB51D /* Montserrat-SemiBold.ttf */; };
-		4F863B432C4BB3DA00CDB51D /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F863B3A2C4BB3DA00CDB51D /* Montserrat-Thin.ttf */; };
-		4F863B442C4BB3DA00CDB51D /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F863B3B2C4BB3DA00CDB51D /* Montserrat-Medium.ttf */; };
-		4F863B452C4BB3DA00CDB51D /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F863B3C2C4BB3DA00CDB51D /* Montserrat-Bold.ttf */; };
 		4F8BD6AE2C4B15C4002B3D4C /* AdvertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8BD6AD2C4B15C4002B3D4C /* AdvertViewController.xib */; };
 		4F8BD6AF2C4B15C4002B3D4C /* AdvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8BD6AB2C4B15C4002B3D4C /* AdvertViewController.swift */; };
 		4F8BD6B02C4B15C4002B3D4C /* AdvertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8BD6AC2C4B15C4002B3D4C /* AdvertViewModel.swift */; };
@@ -115,6 +106,40 @@
 		4F8BD6CB2C4B1915002B3D4C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8BD6CA2C4B1915002B3D4C /* String.swift */; };
 		4F8BD6CE2C4B197C002B3D4C /* DefaultHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8BD6CD2C4B197C002B3D4C /* DefaultHeaderView.swift */; };
 		4F8BD6D02C4B1ACF002B3D4C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8BD6CF2C4B1ACF002B3D4C /* Color.swift */; };
+		4FE0852F2C7D246400C06D2B /* UncategorizedPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE0852E2C7D246400C06D2B /* UncategorizedPreview.swift */; };
+		4FE085312C7D25CE00C06D2B /* Uncategorized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE085302C7D25CE00C06D2B /* Uncategorized.swift */; };
+		4FE085332C7DC1C700C06D2B /* AccessoriesEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE085322C7DC1C700C06D2B /* AccessoriesEnvironment.swift */; };
+		4FE085352C7DCEEC00C06D2B /* TabletEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE085342C7DCEEC00C06D2B /* TabletEnvironment.swift */; };
+		4FE43DF32C591A9C00917919 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FE43DEA2C591A9C00917919 /* Montserrat-ExtraLight.ttf */; };
+		4FE43DF42C591A9C00917919 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FE43DEB2C591A9C00917919 /* Montserrat-ExtraBold.ttf */; };
+		4FE43DF52C591A9C00917919 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FE43DEC2C591A9C00917919 /* Montserrat-Regular.ttf */; };
+		4FE43DF62C591A9C00917919 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FE43DED2C591A9C00917919 /* Montserrat-SemiBold.ttf */; };
+		4FE43DF72C591A9C00917919 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FE43DEE2C591A9C00917919 /* Montserrat-Light.ttf */; };
+		4FE43DF82C591A9C00917919 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FE43DEF2C591A9C00917919 /* Montserrat-Black.ttf */; };
+		4FE43DF92C591A9C00917919 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FE43DF02C591A9C00917919 /* Montserrat-Thin.ttf */; };
+		4FE43DFA2C591A9C00917919 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FE43DF12C591A9C00917919 /* Montserrat-Bold.ttf */; };
+		4FE43DFB2C591A9C00917919 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FE43DF22C591A9C00917919 /* Montserrat-Medium.ttf */; };
+		4FE43DFE2C5A2B2700917919 /* ElectronicProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE43DFD2C5A2B2700917919 /* ElectronicProduct.swift */; };
+		4FE43E032C5A4A2600917919 /* ComputerProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE43E022C5A4A2600917919 /* ComputerProduct.swift */; };
+		4FE43E052C5A4AD300917919 /* ComputerEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE43E042C5A4AD300917919 /* ComputerEnvironment.swift */; };
+		4FE43E072C5A4AF500917919 /* DesktopEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE43E062C5A4AF500917919 /* DesktopEnvironment.swift */; };
+		4FE43E092C5A4B5F00917919 /* NotebookEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE43E082C5A4B5F00917919 /* NotebookEnvironment.swift */; };
+		4FE43E0B2C5A5F0A00917919 /* NotebookProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE43E0A2C5A5F0A00917919 /* NotebookProduct.swift */; };
+		4FE43E112C5A67BB00917919 /* PCDesktopPreview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE43E102C5A67BB00917919 /* PCDesktopPreview.xib */; };
+		4FE43E192C5A680D00917919 /* AdvertNotebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE43E162C5A680D00917919 /* AdvertNotebookViewController.swift */; };
+		4FE43E1A2C5A680D00917919 /* AdvertNotebookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE43E172C5A680D00917919 /* AdvertNotebookViewModel.swift */; };
+		4FE43E1B2C5A680D00917919 /* AdvertNotebookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE43E182C5A680D00917919 /* AdvertNotebookViewController.xib */; };
+		4FE43E1F2C5A681C00917919 /* AdvertDesktopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE43E1C2C5A681C00917919 /* AdvertDesktopViewController.swift */; };
+		4FE43E202C5A681C00917919 /* AdvertDesktopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE43E1D2C5A681C00917919 /* AdvertDesktopViewModel.swift */; };
+		4FE43E212C5A681C00917919 /* AdvertDesktopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE43E1E2C5A681C00917919 /* AdvertDesktopViewController.xib */; };
+		4FE43E232C5AEEA000917919 /* AllAdverterRequirements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE43E222C5AEE9F00917919 /* AllAdverterRequirements.swift */; };
+		4FE43E272C5BC38000917919 /* PCDesktopPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE43E262C5BC38000917919 /* PCDesktopPreview.swift */; };
+		4FE43E2A2C5BC5D100917919 /* NotebookPreview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE43E292C5BC5D100917919 /* NotebookPreview.xib */; };
+		4FE43E2C2C5BC6B600917919 /* NotebookPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE43E2B2C5BC6B600917919 /* NotebookPreview.swift */; };
+		4FE43E2F2C5BCC8F00917919 /* UncategorizedPreview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE43E2E2C5BCC8F00917919 /* UncategorizedPreview.xib */; };
+		4FE43E342C5BCD0600917919 /* UncategorizedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE43E312C5BCD0600917919 /* UncategorizedViewController.swift */; };
+		4FE43E352C5BCD0600917919 /* UncategorizedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE43E322C5BCD0600917919 /* UncategorizedViewModel.swift */; };
+		4FE43E362C5BCD0600917919 /* UncategorizedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE43E332C5BCD0600917919 /* UncategorizedViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,7 +162,7 @@
 		4F17DC342C50552200C106D9 /* SiteHouseProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteHouseProduct.swift; sourceTree = "<group>"; };
 		4F17DC362C50554200C106D9 /* Residence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Residence.swift; sourceTree = "<group>"; };
 		4F17DC382C50558700C106D9 /* Detached.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detached.swift; sourceTree = "<group>"; };
-		4F17DC3B2C5055FE00C106D9 /* Land.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Land.swift; sourceTree = "<group>"; };
+		4F17DC3B2C5055FE00C106D9 /* LandProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandProduct.swift; sourceTree = "<group>"; };
 		4F17DC3D2C511FEE00C106D9 /* Finalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finalizer.swift; sourceTree = "<group>"; };
 		4F17DC402C51254B00C106D9 /* AdvertHouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertHouseViewController.swift; sourceTree = "<group>"; };
 		4F17DC412C51254B00C106D9 /* AdvertHouseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertHouseViewModel.swift; sourceTree = "<group>"; };
@@ -210,15 +235,6 @@
 		4F583B882C53BB5200E58893 /* AdvertLandViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertLandViewController.xib; sourceTree = "<group>"; };
 		4F583B8D2C53C59E00E58893 /* LandPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandPreview.swift; sourceTree = "<group>"; };
 		4F583B8F2C53C6DC00E58893 /* LandPreview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandPreview.xib; sourceTree = "<group>"; };
-		4F863B342C4BB3DA00CDB51D /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraBold.ttf"; path = "../../../../Montserrat/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
-		4F863B352C4BB3DA00CDB51D /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraLight.ttf"; path = "../../../../Montserrat/Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
-		4F863B362C4BB3DA00CDB51D /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Black.ttf"; path = "../../../../Montserrat/Montserrat-Black.ttf"; sourceTree = "<group>"; };
-		4F863B372C4BB3DA00CDB51D /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Light.ttf"; path = "../../../../Montserrat/Montserrat-Light.ttf"; sourceTree = "<group>"; };
-		4F863B382C4BB3DA00CDB51D /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../../../../Montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		4F863B392C4BB3DA00CDB51D /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBold.ttf"; path = "../../../../Montserrat/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
-		4F863B3A2C4BB3DA00CDB51D /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Thin.ttf"; path = "../../../../Montserrat/Montserrat-Thin.ttf"; sourceTree = "<group>"; };
-		4F863B3B2C4BB3DA00CDB51D /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Medium.ttf"; path = "../../../../Montserrat/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
-		4F863B3C2C4BB3DA00CDB51D /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.ttf"; path = "../../../../Montserrat/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		4F8BD6AB2C4B15C4002B3D4C /* AdvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertViewController.swift; sourceTree = "<group>"; };
 		4F8BD6AC2C4B15C4002B3D4C /* AdvertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertViewModel.swift; sourceTree = "<group>"; };
 		4F8BD6AD2C4B15C4002B3D4C /* AdvertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertViewController.xib; sourceTree = "<group>"; };
@@ -227,6 +243,40 @@
 		4F8BD6CA2C4B1915002B3D4C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		4F8BD6CD2C4B197C002B3D4C /* DefaultHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHeaderView.swift; sourceTree = "<group>"; };
 		4F8BD6CF2C4B1ACF002B3D4C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4FE0852E2C7D246400C06D2B /* UncategorizedPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UncategorizedPreview.swift; sourceTree = "<group>"; };
+		4FE085302C7D25CE00C06D2B /* Uncategorized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uncategorized.swift; sourceTree = "<group>"; };
+		4FE085322C7DC1C700C06D2B /* AccessoriesEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoriesEnvironment.swift; sourceTree = "<group>"; };
+		4FE085342C7DCEEC00C06D2B /* TabletEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabletEnvironment.swift; sourceTree = "<group>"; };
+		4FE43DEA2C591A9C00917919 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		4FE43DEB2C591A9C00917919 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		4FE43DEC2C591A9C00917919 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		4FE43DED2C591A9C00917919 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		4FE43DEE2C591A9C00917919 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		4FE43DEF2C591A9C00917919 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		4FE43DF02C591A9C00917919 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		4FE43DF12C591A9C00917919 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		4FE43DF22C591A9C00917919 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		4FE43DFD2C5A2B2700917919 /* ElectronicProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectronicProduct.swift; sourceTree = "<group>"; };
+		4FE43E022C5A4A2600917919 /* ComputerProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerProduct.swift; sourceTree = "<group>"; };
+		4FE43E042C5A4AD300917919 /* ComputerEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerEnvironment.swift; sourceTree = "<group>"; };
+		4FE43E062C5A4AF500917919 /* DesktopEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopEnvironment.swift; sourceTree = "<group>"; };
+		4FE43E082C5A4B5F00917919 /* NotebookEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookEnvironment.swift; sourceTree = "<group>"; };
+		4FE43E0A2C5A5F0A00917919 /* NotebookProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookProduct.swift; sourceTree = "<group>"; };
+		4FE43E102C5A67BB00917919 /* PCDesktopPreview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PCDesktopPreview.xib; sourceTree = "<group>"; };
+		4FE43E162C5A680D00917919 /* AdvertNotebookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertNotebookViewController.swift; sourceTree = "<group>"; };
+		4FE43E172C5A680D00917919 /* AdvertNotebookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertNotebookViewModel.swift; sourceTree = "<group>"; };
+		4FE43E182C5A680D00917919 /* AdvertNotebookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertNotebookViewController.xib; sourceTree = "<group>"; };
+		4FE43E1C2C5A681C00917919 /* AdvertDesktopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertDesktopViewController.swift; sourceTree = "<group>"; };
+		4FE43E1D2C5A681C00917919 /* AdvertDesktopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertDesktopViewModel.swift; sourceTree = "<group>"; };
+		4FE43E1E2C5A681C00917919 /* AdvertDesktopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertDesktopViewController.xib; sourceTree = "<group>"; };
+		4FE43E222C5AEE9F00917919 /* AllAdverterRequirements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAdverterRequirements.swift; sourceTree = "<group>"; };
+		4FE43E262C5BC38000917919 /* PCDesktopPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCDesktopPreview.swift; sourceTree = "<group>"; };
+		4FE43E292C5BC5D100917919 /* NotebookPreview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotebookPreview.xib; sourceTree = "<group>"; };
+		4FE43E2B2C5BC6B600917919 /* NotebookPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookPreview.swift; sourceTree = "<group>"; };
+		4FE43E2E2C5BCC8F00917919 /* UncategorizedPreview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UncategorizedPreview.xib; sourceTree = "<group>"; };
+		4FE43E312C5BCD0600917919 /* UncategorizedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UncategorizedViewController.swift; sourceTree = "<group>"; };
+		4FE43E322C5BCD0600917919 /* UncategorizedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UncategorizedViewModel.swift; sourceTree = "<group>"; };
+		4FE43E332C5BCD0600917919 /* UncategorizedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UncategorizedViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,10 +314,10 @@
 		4F17DC092C4D567B00C106D9 /* Previews */ = {
 			isa = PBXGroup;
 			children = (
-				4F583B8C2C53C57400E58893 /* LandPreview */,
-				4F583B7E2C539C4400E58893 /* SiteHousePreview */,
-				4F583B772C5393CA00E58893 /* HousePreview */,
-				4F583B762C53038600E58893 /* CarPreview */,
+				4FE43E2D2C5BCC8500917919 /* Uncategorized */,
+				4FE43E0E2C5A677700917919 /* Vehicle */,
+				4FE43E0D2C5A676B00917919 /* Estate */,
+				4FE43E0C2C5A675800917919 /* Electronic */,
 			);
 			path = Previews;
 			sourceTree = "<group>";
@@ -305,7 +355,7 @@
 		4F17DC3A2C5055F400C106D9 /* Land */ = {
 			isa = PBXGroup;
 			children = (
-				4F17DC3B2C5055FE00C106D9 /* Land.swift */,
+				4F17DC3B2C5055FE00C106D9 /* LandProduct.swift */,
 			);
 			path = Land;
 			sourceTree = "<group>";
@@ -342,6 +392,7 @@
 		4F3790C62C4A7A940000987C /* Swap */ = {
 			isa = PBXGroup;
 			children = (
+				4FE43DE92C591A7A00917919 /* Fonts */,
 				4F3790F12C4A80E80000987C /* Extension */,
 				4F3790E72C4A7CF60000987C /* CustomView */,
 				4F3790DE2C4A7AE30000987C /* Scene */,
@@ -354,7 +405,6 @@
 				4F3790F42C4A82EC0000987C /* Organizer.swift */,
 				4F3790EB2C4A7DB60000987C /* Model */,
 				4F4ED73B2C4C144A00AE779B /* Resources */,
-				4F863B332C4BB3C000CDB51D /* Fonts */,
 			);
 			path = Swap;
 			sourceTree = "<group>";
@@ -362,9 +412,10 @@
 		4F3790DE2C4A7AE30000987C /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				4F583B852C53BB4700E58893 /* AdvertLand */,
-				4F4ED7212C4C025400AE779B /* AdvertAuto */,
-				4F17DC3F2C51251000C106D9 /* AdvertHouse */,
+				4FE43E302C5BCCF900917919 /* Uncategorized */,
+				4FE43E012C5A426200917919 /* Electronic */,
+				4FE43E002C5A424A00917919 /* Vehicle */,
+				4FE43DFF2C5A423500917919 /* Estate */,
 				4F17DC022C4D50CB00C106D9 /* AdvertPreview */,
 				4F8BD6AA2C4B159B002B3D4C /* Advert */,
 				4F3790FC2C4AA2360000987C /* Home */,
@@ -408,11 +459,13 @@
 		4F3790EB2C4A7DB60000987C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4FE43DFC2C5A29DB00917919 /* Electronic */,
 				4F17DC3A2C5055F400C106D9 /* Land */,
 				4F17DC2F2C4E90F100C106D9 /* Estate */,
 				4F17DC2E2C4E908C00C106D9 /* Vehicle */,
 				4F3790EC2C4A7DBF0000987C /* Protocols */,
 				4F3790F82C4A95D40000987C /* Product.swift */,
+				4FE085302C7D25CE00C06D2B /* Uncategorized.swift */,
 				4F4ED7172C4BD7F500AE779B /* ProductCategory.swift */,
 				4F17DC3D2C511FEE00C106D9 /* Finalizer.swift */,
 			);
@@ -434,6 +487,7 @@
 				4F583B6D2C52F52E00E58893 /* AdressPreviewer.swift */,
 				4F583B742C52FD9C00E58893 /* GalleryPreviewer.swift */,
 				4F583B6F2C52FC9000E58893 /* BaseProducts */,
+				4FE43E222C5AEE9F00917919 /* AllAdverterRequirements.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -588,7 +642,6 @@
 				4F8BD6CA2C4B1915002B3D4C /* String.swift */,
 				4F8BD6CF2C4B1ACF002B3D4C /* Color.swift */,
 				4F4ED71F2C4BF1C500AE779B /* NSObject.swift */,
-				4F4ED7492C4C630400AE779B /* Responder.swift */,
 				4F17DC0E2C4DB64B00C106D9 /* Date.swift */,
 				4F583B7C2C53975600E58893 /* Bool.swift */,
 			);
@@ -598,6 +651,7 @@
 		4F583B842C53A05500E58893 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				4F4ED7492C4C630400AE779B /* Responder.swift */,
 				4F3790F22C4A80F10000987C /* ViewController.swift */,
 				4F4ED71D2C4BEEA900AE779B /* TableViewCell.swift */,
 				4F17DC172C4E602200C106D9 /* CollectionViewCell.swift */,
@@ -622,22 +676,6 @@
 				4F583B8F2C53C6DC00E58893 /* LandPreview.xib */,
 			);
 			path = LandPreview;
-			sourceTree = "<group>";
-		};
-		4F863B332C4BB3C000CDB51D /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				4F863B362C4BB3DA00CDB51D /* Montserrat-Black.ttf */,
-				4F863B3C2C4BB3DA00CDB51D /* Montserrat-Bold.ttf */,
-				4F863B342C4BB3DA00CDB51D /* Montserrat-ExtraBold.ttf */,
-				4F863B352C4BB3DA00CDB51D /* Montserrat-ExtraLight.ttf */,
-				4F863B372C4BB3DA00CDB51D /* Montserrat-Light.ttf */,
-				4F863B3B2C4BB3DA00CDB51D /* Montserrat-Medium.ttf */,
-				4F863B382C4BB3DA00CDB51D /* Montserrat-Regular.ttf */,
-				4F863B392C4BB3DA00CDB51D /* Montserrat-SemiBold.ttf */,
-				4F863B3A2C4BB3DA00CDB51D /* Montserrat-Thin.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		4F8BD6AA2C4B159B002B3D4C /* Advert */ = {
@@ -666,6 +704,147 @@
 				4F8BD6CD2C4B197C002B3D4C /* DefaultHeaderView.swift */,
 			);
 			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		4FE43DE92C591A7A00917919 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4FE43DEF2C591A9C00917919 /* Montserrat-Black.ttf */,
+				4FE43DF12C591A9C00917919 /* Montserrat-Bold.ttf */,
+				4FE43DEB2C591A9C00917919 /* Montserrat-ExtraBold.ttf */,
+				4FE43DEA2C591A9C00917919 /* Montserrat-ExtraLight.ttf */,
+				4FE43DEE2C591A9C00917919 /* Montserrat-Light.ttf */,
+				4FE43DF22C591A9C00917919 /* Montserrat-Medium.ttf */,
+				4FE43DEC2C591A9C00917919 /* Montserrat-Regular.ttf */,
+				4FE43DED2C591A9C00917919 /* Montserrat-SemiBold.ttf */,
+				4FE43DF02C591A9C00917919 /* Montserrat-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4FE43DFC2C5A29DB00917919 /* Electronic */ = {
+			isa = PBXGroup;
+			children = (
+				4FE43DFD2C5A2B2700917919 /* ElectronicProduct.swift */,
+				4FE43E022C5A4A2600917919 /* ComputerProduct.swift */,
+				4FE43E042C5A4AD300917919 /* ComputerEnvironment.swift */,
+				4FE43E062C5A4AF500917919 /* DesktopEnvironment.swift */,
+				4FE43E082C5A4B5F00917919 /* NotebookEnvironment.swift */,
+				4FE43E0A2C5A5F0A00917919 /* NotebookProduct.swift */,
+				4FE085322C7DC1C700C06D2B /* AccessoriesEnvironment.swift */,
+				4FE085342C7DCEEC00C06D2B /* TabletEnvironment.swift */,
+			);
+			path = Electronic;
+			sourceTree = "<group>";
+		};
+		4FE43DFF2C5A423500917919 /* Estate */ = {
+			isa = PBXGroup;
+			children = (
+				4F583B852C53BB4700E58893 /* AdvertLand */,
+				4F17DC3F2C51251000C106D9 /* AdvertHouse */,
+			);
+			path = Estate;
+			sourceTree = "<group>";
+		};
+		4FE43E002C5A424A00917919 /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				4F4ED7212C4C025400AE779B /* AdvertAuto */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		4FE43E012C5A426200917919 /* Electronic */ = {
+			isa = PBXGroup;
+			children = (
+				4FE43E152C5A680000917919 /* Desktop */,
+				4FE43E142C5A67FC00917919 /* Notebook */,
+			);
+			path = Electronic;
+			sourceTree = "<group>";
+		};
+		4FE43E0C2C5A675800917919 /* Electronic */ = {
+			isa = PBXGroup;
+			children = (
+				4FE43E0F2C5A678600917919 /* DesktopPreview */,
+				4FE43E282C5BC5C000917919 /* NotebookPreview */,
+			);
+			path = Electronic;
+			sourceTree = "<group>";
+		};
+		4FE43E0D2C5A676B00917919 /* Estate */ = {
+			isa = PBXGroup;
+			children = (
+				4F583B8C2C53C57400E58893 /* LandPreview */,
+				4F583B7E2C539C4400E58893 /* SiteHousePreview */,
+				4F583B772C5393CA00E58893 /* HousePreview */,
+			);
+			path = Estate;
+			sourceTree = "<group>";
+		};
+		4FE43E0E2C5A677700917919 /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				4F583B762C53038600E58893 /* CarPreview */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		4FE43E0F2C5A678600917919 /* DesktopPreview */ = {
+			isa = PBXGroup;
+			children = (
+				4FE43E262C5BC38000917919 /* PCDesktopPreview.swift */,
+				4FE43E102C5A67BB00917919 /* PCDesktopPreview.xib */,
+			);
+			path = DesktopPreview;
+			sourceTree = "<group>";
+		};
+		4FE43E142C5A67FC00917919 /* Notebook */ = {
+			isa = PBXGroup;
+			children = (
+				4FE43E162C5A680D00917919 /* AdvertNotebookViewController.swift */,
+				4FE43E182C5A680D00917919 /* AdvertNotebookViewController.xib */,
+				4FE43E172C5A680D00917919 /* AdvertNotebookViewModel.swift */,
+			);
+			path = Notebook;
+			sourceTree = "<group>";
+		};
+		4FE43E152C5A680000917919 /* Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				4FE43E1C2C5A681C00917919 /* AdvertDesktopViewController.swift */,
+				4FE43E1E2C5A681C00917919 /* AdvertDesktopViewController.xib */,
+				4FE43E1D2C5A681C00917919 /* AdvertDesktopViewModel.swift */,
+			);
+			path = Desktop;
+			sourceTree = "<group>";
+		};
+		4FE43E282C5BC5C000917919 /* NotebookPreview */ = {
+			isa = PBXGroup;
+			children = (
+				4FE43E2B2C5BC6B600917919 /* NotebookPreview.swift */,
+				4FE43E292C5BC5D100917919 /* NotebookPreview.xib */,
+			);
+			path = NotebookPreview;
+			sourceTree = "<group>";
+		};
+		4FE43E2D2C5BCC8500917919 /* Uncategorized */ = {
+			isa = PBXGroup;
+			children = (
+				4FE0852E2C7D246400C06D2B /* UncategorizedPreview.swift */,
+				4FE43E2E2C5BCC8F00917919 /* UncategorizedPreview.xib */,
+			);
+			path = Uncategorized;
+			sourceTree = "<group>";
+		};
+		4FE43E302C5BCCF900917919 /* Uncategorized */ = {
+			isa = PBXGroup;
+			children = (
+				4FE43E312C5BCD0600917919 /* UncategorizedViewController.swift */,
+				4FE43E332C5BCD0600917919 /* UncategorizedViewController.xib */,
+				4FE43E322C5BCD0600917919 /* UncategorizedViewModel.swift */,
+			);
+			path = Uncategorized;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -733,33 +912,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F17DC152C4E5EF100C106D9 /* AdvertPreviewImageCollectionViewCell.xib in Resources */,
+				4FE43E1B2C5A680D00917919 /* AdvertNotebookViewController.xib in Resources */,
+				4FE43DF92C591A9C00917919 /* Montserrat-Thin.ttf in Resources */,
 				4F583B792C53940C00E58893 /* HousePreview.xib in Resources */,
+				4FE43DF52C591A9C00917919 /* Montserrat-Regular.ttf in Resources */,
 				4F17DC432C51254B00C106D9 /* AdvertHouseViewController.xib in Resources */,
 				4F3790D42C4A7A960000987C /* Assets.xcassets in Resources */,
-				4F863B422C4BB3DA00CDB51D /* Montserrat-SemiBold.ttf in Resources */,
-				4F863B3F2C4BB3DA00CDB51D /* Montserrat-Black.ttf in Resources */,
 				4F17DC0D2C4D56C800C106D9 /* CarPreview.xib in Resources */,
-				4F863B3D2C4BB3DA00CDB51D /* Montserrat-ExtraBold.ttf in Resources */,
-				4F863B402C4BB3DA00CDB51D /* Montserrat-Light.ttf in Resources */,
+				4FE43E2F2C5BCC8F00917919 /* UncategorizedPreview.xib in Resources */,
+				4FE43DF62C591A9C00917919 /* Montserrat-SemiBold.ttf in Resources */,
+				4FE43DFB2C591A9C00917919 /* Montserrat-Medium.ttf in Resources */,
 				4F583B8B2C53BB5200E58893 /* AdvertLandViewController.xib in Resources */,
 				4F17DC062C4D50DF00C106D9 /* AdvertPreviewViewController.xib in Resources */,
 				4F0D0A132C4BA8A600427C78 /* AdvertTableViewCell.xib in Resources */,
-				4F863B452C4BB3DA00CDB51D /* Montserrat-Bold.ttf in Resources */,
+				4FE43E362C5BCD0600917919 /* UncategorizedViewController.xib in Resources */,
 				4F583B682C528C4B00E58893 /* AdvertDetachedViewController.xib in Resources */,
-				4F863B3E2C4BB3DA00CDB51D /* Montserrat-ExtraLight.ttf in Resources */,
+				4FE43E112C5A67BB00917919 /* PCDesktopPreview.xib in Resources */,
+				4FE43E212C5A681C00917919 /* AdvertDesktopViewController.xib in Resources */,
 				4F583B902C53C6DC00E58893 /* LandPreview.xib in Resources */,
+				4FE43DF32C591A9C00917919 /* Montserrat-ExtraLight.ttf in Resources */,
 				4F4ED7272C4C02C400AE779B /* AdvertAutoFirstStepViewController.xib in Resources */,
 				4F3790D72C4A7A960000987C /* Base in Resources */,
+				4FE43DF72C591A9C00917919 /* Montserrat-Light.ttf in Resources */,
 				4F583B5C2C528A8E00E58893 /* AdvertAppertmentViewController.xib in Resources */,
+				4FE43DF82C591A9C00917919 /* Montserrat-Black.ttf in Resources */,
 				4F4ED7462C4C1AD300AE779B /* RequestGalleryViewController.xib in Resources */,
+				4FE43DFA2C591A9C00917919 /* Montserrat-Bold.ttf in Resources */,
 				4F4ED7332C4C086800AE779B /* AdressViewController.xib in Resources */,
 				4F583B822C539D3300E58893 /* SiteHousePreview.xib in Resources */,
 				4F8BD6AE2C4B15C4002B3D4C /* AdvertViewController.xib in Resources */,
 				4F4ED73A2C4C136C00AE779B /* SelectFormViewController.xib in Resources */,
+				4FE43DF42C591A9C00917919 /* Montserrat-ExtraBold.ttf in Resources */,
 				4F583B622C528BF200E58893 /* AdvertResidenceViewController.xib in Resources */,
-				4F863B412C4BB3DA00CDB51D /* Montserrat-Regular.ttf in Resources */,
-				4F863B442C4BB3DA00CDB51D /* Montserrat-Medium.ttf in Resources */,
-				4F863B432C4BB3DA00CDB51D /* Montserrat-Thin.ttf in Resources */,
+				4FE43E2A2C5BC5D100917919 /* NotebookPreview.xib in Resources */,
 				4F3791002C4AA2420000987C /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -775,15 +960,23 @@
 				4F4ED72C2C4C045D00AE779B /* View.swift in Sources */,
 				4F583B602C528BF200E58893 /* AdvertResidenceViewController.swift in Sources */,
 				4F583B612C528BF200E58893 /* AdvertResidenceViewModel.swift in Sources */,
+				4FE43E072C5A4AF500917919 /* DesktopEnvironment.swift in Sources */,
 				4F3790FB2C4A98840000987C /* Vehicle.swift in Sources */,
 				4F17DC2D2C4E8D9400C106D9 /* PreviewLayer.swift in Sources */,
+				4FE0852F2C7D246400C06D2B /* UncategorizedPreview.swift in Sources */,
 				4F3790EE2C4A7DC90000987C /* AlertPresentable.swift in Sources */,
 				4F8BD6CB2C4B1915002B3D4C /* String.swift in Sources */,
 				4F4ED7182C4BD7F500AE779B /* ProductCategory.swift in Sources */,
+				4FE43E0B2C5A5F0A00917919 /* NotebookProduct.swift in Sources */,
+				4FE43DFE2C5A2B2700917919 /* ElectronicProduct.swift in Sources */,
 				4F3790D22C4A7A940000987C /* Swap.xcdatamodeld in Sources */,
+				4FE43E052C5A4AD300917919 /* ComputerEnvironment.swift in Sources */,
 				4F583B892C53BB5200E58893 /* AdvertLandViewController.swift in Sources */,
 				4F583B8A2C53BB5200E58893 /* AdvertLandViewModel.swift in Sources */,
 				4F583B752C52FD9C00E58893 /* GalleryPreviewer.swift in Sources */,
+				4FE43E192C5A680D00917919 /* AdvertNotebookViewController.swift in Sources */,
+				4FE085352C7DCEEC00C06D2B /* TabletEnvironment.swift in Sources */,
+				4FE43E1A2C5A680D00917919 /* AdvertNotebookViewModel.swift in Sources */,
 				4F17DC162C4E5EF100C106D9 /* AdvertPreviewImageCollectionViewCell.swift in Sources */,
 				4F583B6E2C52F52E00E58893 /* AdressPreviewer.swift in Sources */,
 				4F4ED7312C4C086800AE779B /* AdressViewController.swift in Sources */,
@@ -791,6 +984,8 @@
 				4F4ED72A2C4C042C00AE779B /* ONFormField.swift in Sources */,
 				4F583B732C52FD1600E58893 /* BaseProducts.swift in Sources */,
 				4F8BD6CE2C4B197C002B3D4C /* DefaultHeaderView.swift in Sources */,
+				4FE43E1F2C5A681C00917919 /* AdvertDesktopViewController.swift in Sources */,
+				4FE43E202C5A681C00917919 /* AdvertDesktopViewModel.swift in Sources */,
 				4F17DC372C50554200C106D9 /* Residence.swift in Sources */,
 				4F4ED71C2C4BE04500AE779B /* CategoryImplementer.swift in Sources */,
 				4F0D0A122C4BA8A600427C78 /* AdvertTableViewCell.swift in Sources */,
@@ -808,12 +1003,17 @@
 				4F583B712C52FD0D00E58893 /* House.swift in Sources */,
 				4F4ED7392C4C136C00AE779B /* SelectFormViewModel.swift in Sources */,
 				4F3790F92C4A95D40000987C /* Product.swift in Sources */,
+				4FE085312C7D25CE00C06D2B /* Uncategorized.swift in Sources */,
+				4FE43E2C2C5BC6B600917919 /* NotebookPreview.swift in Sources */,
 				4F3790E32C4A7C320000987C /* BaseViewModel.swift in Sources */,
 				4F17DC072C4D50DF00C106D9 /* AdvertPreviewViewController.swift in Sources */,
+				4FE085332C7DC1C700C06D2B /* AccessoriesEnvironment.swift in Sources */,
 				4F17DC082C4D50DF00C106D9 /* AdvertPreviewViewModel.swift in Sources */,
 				4F3791012C4AA2420000987C /* HomeViewController.swift in Sources */,
 				4F583B8E2C53C59E00E58893 /* LandPreview.swift in Sources */,
 				4F8BD6C92C4B18BD002B3D4C /* BaseButton.swift in Sources */,
+				4FE43E342C5BCD0600917919 /* UncategorizedViewController.swift in Sources */,
+				4FE43E352C5BCD0600917919 /* UncategorizedViewModel.swift in Sources */,
 				4F17DC442C51254B00C106D9 /* AdvertHouseViewController.swift in Sources */,
 				4F17DC452C51254B00C106D9 /* AdvertHouseViewModel.swift in Sources */,
 				4F4ED7202C4BF1C500AE779B /* NSObject.swift in Sources */,
@@ -826,7 +1026,7 @@
 				4F3790E12C4A7B270000987C /* BaseViewController.swift in Sources */,
 				4F583B662C528C4B00E58893 /* AdvertDetachedViewController.swift in Sources */,
 				4F583B672C528C4B00E58893 /* AdvertDetachedViewModel.swift in Sources */,
-				4F17DC3C2C5055FE00C106D9 /* Land.swift in Sources */,
+				4F17DC3C2C5055FE00C106D9 /* LandProduct.swift in Sources */,
 				4F3790F72C4A91690000987C /* Car.swift in Sources */,
 				4F4ED74A2C4C630400AE779B /* Responder.swift in Sources */,
 				4F4ED73D2C4C146900AE779B /* AdressResource.swift in Sources */,
@@ -834,8 +1034,10 @@
 				4F8BD6AF2C4B15C4002B3D4C /* AdvertViewController.swift in Sources */,
 				4F17DBFF2C4D0E1200C106D9 /* BaseForm.swift in Sources */,
 				4F583B6C2C52F39200E58893 /* Advert.swift in Sources */,
+				4FE43E032C5A4A2600917919 /* ComputerProduct.swift in Sources */,
 				4F17DC352C50552200C106D9 /* SiteHouseProduct.swift in Sources */,
 				4F17DC012C4D0E3B00C106D9 /* OFFormField.swift in Sources */,
+				4FE43E272C5BC38000917919 /* PCDesktopPreview.swift in Sources */,
 				4F4ED7482C4C3D9C00AE779B /* FormHelper.swift in Sources */,
 				4F583B5A2C528A8E00E58893 /* AdvertAppertmentViewController.swift in Sources */,
 				4F583B5B2C528A8E00E58893 /* AdvertAppertmentViewModel.swift in Sources */,
@@ -845,7 +1047,9 @@
 				4F3790F52C4A82EC0000987C /* Organizer.swift in Sources */,
 				4F17DC392C50558700C106D9 /* Detached.swift in Sources */,
 				4F8BD6C72C4B188C002B3D4C /* BaseView.swift in Sources */,
+				4FE43E092C5A4B5F00917919 /* NotebookEnvironment.swift in Sources */,
 				4F3790C82C4A7A940000987C /* AppDelegate.swift in Sources */,
+				4FE43E232C5AEEA000917919 /* AllAdverterRequirements.swift in Sources */,
 				4F583B7D2C53975600E58893 /* Bool.swift in Sources */,
 				4F17DC332C50313A00C106D9 /* Appertment.swift in Sources */,
 				4F3790CA2C4A7A940000987C /* SceneDelegate.swift in Sources */,

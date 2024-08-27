@@ -21,12 +21,16 @@ final class AdvertPreviewViewController: BaseViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var contentStackView: UIStackView!
     @IBOutlet weak var advertHeading: UILabel!
+    @IBOutlet weak var advertDescription: UILabel!
     @IBOutlet weak var sellerName: UILabel!
     @IBOutlet weak var sellerOpenedAccountDate: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var adressLabel: UILabel!
+    @IBOutlet weak var bottomContentView: UIStackView!
+    @IBOutlet weak var descriptionContentView: UIStackView!
     
     
+    private var productView: UIView?
     // MARK: - View lifecycle
     
     override func viewDidLoad() {
@@ -39,10 +43,23 @@ final class AdvertPreviewViewController: BaseViewController {
         collectionView.dataSource = self
         AdvertPreviewImageCollectionViewCell.registerSelf(collectionView: collectionView)
         advertHeading.text = viewModel.product.heading
+        advertDescription.text = viewModel.product.description
         sellerName.text = viewModel.product.seller.name
-        sellerOpenedAccountDate.text = viewModel.product.seller.registerDate
+        sellerOpenedAccountDate.text = "Hesap Açma Tarihi " + Date.convertTimestamp(serverTimestamp: Double(viewModel.product.seller.registerTimeStamp)).toString(format: "LLLL yyyy", isLocalized: false).localized
         categoryLabel.text = viewModel.product.categoryStrings
         adressLabel.text = viewModel.product.adress.describe()
+    }
+    
+    
+    @IBAction func tappedGetFeaturesButton(_ sender: Any) {
+        productView?.isHidden = false
+        descriptionContentView.isHidden = true
+        
+    }
+    
+    @IBAction func tappedGetDescriptionButton(_ sender: Any) {
+        productView?.isHidden = true
+        descriptionContentView.isHidden = false
     }
     
     // MARK: - IBActions
@@ -50,8 +67,9 @@ final class AdvertPreviewViewController: BaseViewController {
     
     //MARK: -> Private
     private func setProductView(_ view: UIView) {
+        self.productView = view
         view.translatesAutoresizingMaskIntoConstraints = false
-        contentStackView.addArrangedSubview(view)
+        bottomContentView.addArrangedSubview(view)
         
         NSLayoutConstraint.activate([
             view.leadingAnchor.constraint(equalTo: contentStackView.leadingAnchor),
@@ -82,6 +100,11 @@ extension AdvertPreviewViewController: AdvertPreviewViewModel.Delegate {
     
     func setLandPreview(_ product: LandProduct) {
         let view = LandPreview(preview: product)
+        setProductView(view)
+    }
+    
+    func setUncategorizedPreview(_ product: Uncategorized) {
+        let view = UncategorizedPreview(preview: product)
         setProductView(view)
     }
     

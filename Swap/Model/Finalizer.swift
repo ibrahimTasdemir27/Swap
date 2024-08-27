@@ -24,6 +24,25 @@ enum Finalizer: String, Describer {
     case cooperative
     
     
+    
+    case desktop
+    case desktopequipment
+    
+    case notebook
+    case notebookequipment
+    case notebookreplacementpart
+    
+    case accessorieslaptop
+    case accessoriestablet
+    case accessoriesusb
+    case accessoriesrepair
+    case accessoriesbag
+    case accessoriesmousepad
+    case accessoriesbatch
+    
+    case tablet
+    case tabletreplacementpart
+    
     func describe() -> String {
         return "Finalizer#\(rawValue)"
     }

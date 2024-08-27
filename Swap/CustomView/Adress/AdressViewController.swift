@@ -52,6 +52,10 @@ final class AdressViewController: UIViewController, AlertPresentable {
     }
     
     // MARK: - IBActions
+    @IBAction func tappedBackButton(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func tappedContinueButton(_ sender: Any) {
         guard let country = countryLabel.safeText(),
               let city = cityLabel.safeText(),
@@ -79,8 +83,6 @@ extension AdressViewController: AdressViewModel.Delegate {
     func readyAdressContent(_ adress: AdressViewModel.Adress) {
         delegate?.readyAdressContent(adress)
     }
-    
-    
 }
 
 

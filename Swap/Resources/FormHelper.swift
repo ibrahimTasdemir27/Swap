@@ -15,6 +15,9 @@ enum FormTypeEnum {
     case tractionType
     case fuelType
     case color
+    
+    
+    
     case room
     case autopark
     case heating
@@ -24,6 +27,17 @@ enum FormTypeEnum {
     case zonestate
     case kaks
     case sizelimit
+    
+    case ram
+    case hdd
+    case ssd
+    case displaycard
+    case screensize
+    case resolution
+    case pccasetype
+    
+    
+    case productstate
     case yesno(raw: String)
     
     func getForm() -> [String: Any] {
@@ -199,6 +213,76 @@ enum FormTypeEnum {
             }
             
             
+            
+            
+
+            
+            //MARK: -> Ram
+        case .ram:
+            return ElectronicProductEnvironment.ComputerEnvironment.RAM.allCases.reduce(into: [String: Any]()) { partialResult, ram in
+                partialResult[ram.describe()] = ram
+            }
+            
+            
+            //MARK: -> HDD
+        case .hdd:
+            return ElectronicProductEnvironment.ComputerEnvironment.HDD.allCases.reduce(into: [String: Any]()) { partialResult, hdd in
+                partialResult[hdd.describe()] = hdd
+            }
+            
+            
+            //MARK: -> SSD
+        case .ssd:
+            return ElectronicProductEnvironment.ComputerEnvironment.SSD.allCases.reduce(into: [String: Any]()) { partialResult, ssd in
+                partialResult[ssd.describe()] = ssd
+            }
+            
+            
+            //MARK: -> Ekran Kartı
+        case .displaycard:
+            return ElectronicProductEnvironment.ComputerEnvironment.DisplayCard.allCases.reduce(into: [String: Any]()) { partialResult, displayCard in
+                partialResult[displayCard.describe()] = displayCard
+            }
+            
+            
+            
+            //MARK: -> Ekran Boyutu
+        case .screensize:
+            return ElectronicProductEnvironment.ComputerEnvironment.ScreenSize.allCases.reduce(into: [String: Any]()) { partialResult, screenSize in
+                partialResult[screenSize.describe()] = screenSize
+            }
+            
+            
+            
+            //MARK: -> Ekran Çözünürlüğü
+        case .resolution:
+            return ElectronicProductEnvironment.NotebookEnvironment.Resolution.allCases.reduce(into: [String: Any]()) { partialResult, resolution in
+                partialResult[resolution.describe()] = resolution
+            }
+            
+            
+            
+            
+            
+            //MARK: -> Kasa Tipi
+        case .pccasetype:
+            return ElectronicProductEnvironment.DesktopEnvironment.CaseType.allCases.reduce(into: [String: Any]()) { partialResult, caseType in
+                partialResult[caseType.describe()] = caseType
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            //MARK: -> Ürün Durumu
+        case .productstate:
+            return ProductStatus.allCases.reduce(into: [String: Any]()) { partialResult, state in
+                partialResult[state.describe()] = state
+            }
             
             
             

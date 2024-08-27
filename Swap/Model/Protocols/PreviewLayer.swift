@@ -10,4 +10,6 @@ import Foundation
 protocol PreviewLayer {
     associatedtype PreviewElement
     init(preview: PreviewElement)
+    func commonInıt(for product: PreviewElement)
+    func fillContent(for product: PreviewElement)
 }
