@@ -19,6 +19,7 @@ class BaseFormField: UITextField, BaseFormRequirements, Animetable, SafeTextRepr
         self.layer.masksToBounds = true
         self.clipsToBounds = true
         self.addTarget(self, action: #selector(startEditingUI), for: .editingDidBegin)
+        
     }
     
     override init(frame: CGRect) {

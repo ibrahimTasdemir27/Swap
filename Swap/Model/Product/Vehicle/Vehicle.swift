@@ -70,14 +70,3 @@ class Vehicle: Product {
 
 
 
-
-/*
- Orada tip seçilmese ?
- Sadece liste olsa ?
- Kullanıcı diyelim Vasıta'yı seçti
- Ardından Vasıta için geçerli olan Modeller ?
- Vasıta'dan Suv seçti diyelim ?
- Ardından yıl'ı seçsin
- Ardından Model listesi gelsin
- 
- */

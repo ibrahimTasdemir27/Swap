@@ -103,6 +103,11 @@ extension AdvertPreviewViewController: AdvertPreviewViewModel.Delegate {
         setProductView(view)
     }
     
+    func setPhonePreview(_ product: PhoneProduct) {
+        let view = PhonePreview(preview: product)
+        setProductView(view)
+    }
+    
     func setUncategorizedPreview(_ product: Uncategorized) {
         let view = UncategorizedPreview(preview: product)
         setProductView(view)
@@ -152,23 +157,3 @@ extension AdvertPreviewViewController: XibNameProvider {
 }
 
 
-
-/*
- Şimdi buraya araba ilanı gelebilir ?
- Emlak ilanı gelebilir ?
- Elektronik ilanı gelebilir ?
- Eşya ilanı gelebilir ?
- 
- 
- Hangisi gelicekse tip olarak belirtilsin
- Araba geliyorsa,
- araba preview,
- emlak preview,
- electronic preview,
- eşya preview
- 
- Şimdik advert preview'e
- 
- 
- 
- */

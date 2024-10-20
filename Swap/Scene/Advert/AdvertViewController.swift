@@ -88,6 +88,10 @@ extension AdvertViewController: AdvertViewModelDelegate {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    func redirectAdvertPhone() {
+        let vc = AdvertPhoneViewController.create(categorys: viewModel.selectedContents)
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
     func redirectUncategorized() {
         let vc = UncategorizedViewController.create(categorys: viewModel.selectedContents)
@@ -153,21 +157,3 @@ extension AdvertViewController: XibNameProvider {
     }
 }
 
-
-/*
- Diyelim araç seçiyor ?
- Aracın ilk olarak markasını seçicek ?
- Ardından Modeli seçicek ?
- Ardından Motor tipini seçicek ?
- 
- 
- Her ev tipi için bir ekran tasarlasam ?
- Residence için bir tane
- Gecekondu için ayrı bir tane
- Normal için ayrı bir tane
- 
- Şu an bir normal için
- bir de site içi evler için tasarlamam lazım
- Tamam
- 
- */

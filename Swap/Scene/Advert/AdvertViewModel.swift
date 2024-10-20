@@ -15,6 +15,7 @@ protocol AdvertViewModelDelegate: AnyObject {
     func redirectAdvertLand()
     func redirectAdvertDesktop()
     func redirectAdvertNotebook()
+    func redirectAdvertPhone()
     func redirectUncategorized()
 }
 
@@ -66,11 +67,17 @@ final class AdvertViewModel: BaseViewModel {
             delegate?.redirectAdvertDesktop()
         case .notebook:
             delegate?.redirectAdvertNotebook()
+        case .phone:
+            delegate?.redirectAdvertPhone()
         case .desktopequipment, .notebookequipment, .notebookreplacementpart:
             delegate?.redirectUncategorized()
         case .accessorieslaptop, .accessoriestablet, .accessoriesusb, .accessoriesrepair, .accessoriesbag, .accessoriesmousepad, .accessoriesbatch:
             delegate?.redirectUncategorized()
-        case .tablet, .tabletreplacementpart:
+        case .tablet, .tabletreplacementpart, .monitor:
+            delegate?.redirectUncategorized()
+        case .phoneaccessories, .phonereplacementpart, .phoneoperators, .wearabletech:
+            delegate?.redirectUncategorized()
+        case .otherelectronic:
             delegate?.redirectUncategorized()
         }
     }

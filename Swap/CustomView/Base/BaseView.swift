@@ -9,13 +9,7 @@ import UIKit
 
 
 @IBDesignable
-class BaseView: UIView {
-    @IBInspectable var borderColor: UIColor = UIColor.clear {
-        didSet {
-            layer.borderColor = borderColor.cgColor
-        }
-    }
-    
+class BaseView: UIView {    
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth

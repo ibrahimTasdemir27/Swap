@@ -23,7 +23,7 @@ class DefaultHeaderView: UIView {
         button.setTitle("#TakasLa", for: .normal)
         button.contentHorizontalAlignment = .left
         button.titleLabel?.font = .init(name: "Montserrat-ExtraBold", size: 25)
-        button.setTitleColor(.primary, for: .normal)
+        button.setTitleColor(.Colors.primary, for: .normal)
         return button
     }()
     
@@ -33,7 +33,7 @@ class DefaultHeaderView: UIView {
         button.setTitle("@İlan Ver", for: .normal)
         button.contentHorizontalAlignment = .left
         button.titleLabel?.font = .init(name: "Montserrat-SemiBold", size: 18)
-        button.setTitleColor(.primaryGray, for: .normal)
+        button.setTitleColor(.Colors.primaryGray, for: .normal)
         return button
     }()
     

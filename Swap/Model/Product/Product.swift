@@ -43,6 +43,7 @@ class Product: BaseProductImplementer, Codable {
     let timestamp: Int
     let adress: AdressViewModel.Adress
     let categoryArray: [String]
+    let primaryImage: String?
     let images: [String]
     
     
@@ -50,7 +51,7 @@ class Product: BaseProductImplementer, Codable {
         return categoryArray.joined(separator: " > ")
     }
     
-    init(id: String = UUID().uuidString, heading: String, description: String, seller: ProductSeller, listingDate: String = Date().toStringSmall(), timestamp: Int = Date.getTimeStamp(), adress: AdressViewModel.Adress, categoryArray: [String], images: [String]) {
+    init(id: String = UUID().uuidString, heading: String, description: String, seller: ProductSeller, listingDate: String = Date().toStringSmall(), timestamp: Int = Date.getTimeStamp(), adress: AdressViewModel.Adress, categoryArray: [String], primaryImage: String? = nil, images: [String]) {
         self.id = id
         self.heading = heading
         self.description = description
@@ -59,6 +60,7 @@ class Product: BaseProductImplementer, Codable {
         self.timestamp = timestamp
         self.adress = adress
         self.categoryArray = categoryArray
+        self.primaryImage = primaryImage
         self.images = images
     }
     
@@ -71,6 +73,7 @@ class Product: BaseProductImplementer, Codable {
         self.timestamp = product.timestamp
         self.adress = product.adress
         self.categoryArray = product.categoryArray
+        self.primaryImage = product.primaryImage
         self.images = product.images
     }
 

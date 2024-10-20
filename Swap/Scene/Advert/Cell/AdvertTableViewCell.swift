@@ -44,19 +44,3 @@ final class AdvertTableViewCell: UITableViewCell {
     
 }
 
-
-/*
- Seçili olan kategoriye göre işlem yapılsın
- Diyelim kullanıcı girdi ve
- Vasıta'yı seçti
- 
- Ardından AdvertViewController'i Vasıta olarak açalım
- Ardından Vasıta içerisinden diyelim Otomobil'i seçti
- Ardından AdvertViewController'i Vasıta/Otomobil olarak açalım
- 
- Peki burdan verileri nasıl getiricez ?
- Kaçıncı adımda nerede ne açılacak nasıl ayarlıycaz ?
- Bana bir dictionary lazım
- 
- 
- */

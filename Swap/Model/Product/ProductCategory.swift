@@ -53,13 +53,3 @@ extension ProductCategory {
 
 
 //MARK: -> Vehicle/Automobile/Renault/Clio/1.3TCe
-/*
- Model lazım ?
- Yakıt tipi lazım ?
- Bu 5 adımı geçtikten sonra
- Model yılı seçsin ?
- Yakıt tipi seçsin ?
- 
- 
- */
-

@@ -54,8 +54,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     private func getRootViewController() -> UIViewController {
-        let vc = AdvertViewController.create(with: ProductCategory.allData())
+        //let vc = RequestExchangeViewController.create()
         //let vc = HomeViewController.create()
+        let vc = AdvertViewController.create(with: ProductCategory.allData())
         return wrapWithNavigationController(for: vc)
     }
     

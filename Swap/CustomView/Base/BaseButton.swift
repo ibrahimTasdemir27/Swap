@@ -7,16 +7,11 @@
 
 import UIKit
 
-class BaseButton: UIButton {
+@IBDesignable
+final class BaseButton: UIButton {
     
     @IBInspectable var autoLocalization: Bool = true
     var localizableText:String?
-    
-    @IBInspectable var borderColor: UIColor = UIColor.clear {
-        didSet {
-            layer.borderColor = borderColor.cgColor
-        }
-    }
     
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
@@ -42,6 +37,7 @@ class BaseButton: UIButton {
     }
     
     func setup(){
+        fontSize = fontSize + 1 - 1
         if autoLocalization == true && currentTitle != nil {
             localizableText = self.currentTitle
             super.setTitle(localizableText?.localized, for: UIControl.State())
@@ -52,8 +48,26 @@ class BaseButton: UIButton {
     override func setTitle(_ title: String?, for state: UIControl.State) {
         if autoLocalization == true && title != nil {
             super.setTitle(title?.localized, for: state)
-        }else {
+        } else {
             super.setTitle(title, for: state)
+        }
+    }
+    
+    @IBInspectable var fontRaw: Int = 1 {
+        didSet {
+            guard let font = FontEnums.Montserrat(rawValue: fontRaw) else {
+                 return
+             }
+             titleLabel?.font = font.getFont(size: CGFloat(fontSize))
+        }
+    }
+    
+    @IBInspectable var fontSize: Int = 14 {
+        didSet {
+            guard let font = FontEnums.Montserrat(rawValue: fontRaw) else {
+                return
+            }
+            titleLabel?.font = font.getFont(size: CGFloat(fontSize))
         }
     }
 

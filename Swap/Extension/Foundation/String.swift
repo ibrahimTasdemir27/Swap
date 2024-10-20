@@ -15,4 +15,13 @@ public extension String {
     func localized(_ bundleClass: AnyClass) -> String {
         return NSLocalizedString(self, tableName: nil, bundle: Bundle(for: bundleClass), value: "", comment: "")
     }
+    
+    func trimmed() -> String? {
+        if self.trimmingCharacters(in: .whitespacesAndNewlines) != "" {
+            return self
+        }
+        
+        return nil
+    }
+    
 }

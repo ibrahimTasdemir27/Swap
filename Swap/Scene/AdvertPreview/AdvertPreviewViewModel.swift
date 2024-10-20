@@ -17,6 +17,7 @@ final class AdvertPreviewViewModel: BaseViewModel {
         func setHousePreview(_ product: EstateProduct)
         func setSiteHousePreview(_ product: SiteHouseProduct)
         func setLandPreview(_ product: LandProduct)
+        func setPhonePreview(_ product: PhoneProduct)
         func setUncategorizedPreview(_ product: Uncategorized)
     }
     
@@ -24,6 +25,7 @@ final class AdvertPreviewViewModel: BaseViewModel {
     private var housePreview: EstateProduct?
     private var siteHousePreview: SiteHouseProduct?
     private var landPreview: LandProduct?
+    private var phonePreview: PhoneProduct?
     private var uncategorizedPreview: Uncategorized?
     
     let product: Product
@@ -60,6 +62,10 @@ final class AdvertPreviewViewModel: BaseViewModel {
         if let product = product as? LandProduct {
             self.landPreview = product
             self.delegate?.setLandPreview(product)
+        }
+        if let product = product as? PhoneProduct {
+            self.phonePreview = product
+            self.delegate?.setPhonePreview(product)
         }
         if let product = product as? Uncategorized {
             self.uncategorizedPreview = product

@@ -37,6 +37,15 @@ enum FormTypeEnum {
     case pccasetype
     
     
+    case phonescreensize
+    case phonememory
+    case phoneram
+    case phonecolor
+    case phonecamera
+    case phonefrontcamera
+    case operationsystem
+    
+    
     case productstate
     case yesno(raw: String)
     
@@ -273,6 +282,60 @@ enum FormTypeEnum {
             
             
             
+            //MARK: -> Telefon Ekran Boyutu
+        case .phonescreensize:
+            return ElectronicProductEnvironment.PhoneEnvironment.ScreenSize.allCases.reduce(into: [String: Any]()) { partialResult, screenSize in
+                partialResult[screenSize.describe()] = screenSize
+            }
+            
+            
+            
+            //MARK: -> Telefon RAM Bellek
+        case .phonememory:
+            return ElectronicProductEnvironment.PhoneEnvironment.Memory.allCases.reduce(into: [String: Any]()) { partialResult, memory in
+                partialResult[memory.describe()] = memory
+            }
+            
+            
+            
+            //MARK: -> Telefon RAM Bellek
+        case .phoneram:
+            return ElectronicProductEnvironment.PhoneEnvironment.RAM.allCases.reduce(into: [String: Any]()) { partialResult, ram in
+                partialResult[ram.describe()] = ram
+            }
+            
+            
+            
+            //MARK: -> Telefon Renk
+        case .phonecolor:
+            return ElectronicProductEnvironment.PhoneEnvironment.Color.allCases.reduce(into: [String: Any]()) { partialResult, color in
+                partialResult[color.describe()] = color
+            }
+            
+            
+            //MARK: -> Telefon Kamera
+        case .phonecamera:
+            return ElectronicProductEnvironment.PhoneEnvironment.MegaPixel.allCases.reduce(into: [String: Any]()) { partialResult, megapx in
+                partialResult[megapx.describe()] = megapx
+            }
+            
+            
+            
+            
+            //MARK: -> Telefon Ön Kamera
+        case .phonefrontcamera:
+            return ElectronicProductEnvironment.PhoneEnvironment.FrontMegaPixel.allCases.reduce(into: [String: Any]()) { partialResult, megapx in
+                partialResult[megapx.describe()] = megapx
+            }
+            
+            
+            
+            
+            //MARK: -> İşletim Sistemi
+        case .operationsystem:
+            return ElectronicProductEnvironment.PhoneEnvironment.OperatingSystem.allCases.reduce(into: [String: Any]()) { partialResult, operatingSystem in
+                partialResult[operatingSystem.describe()] = operatingSystem
+            }
             
             
             
@@ -292,8 +355,6 @@ enum FormTypeEnum {
                 "Var": true,
                 "Yok": false
             ]
-            
-            
             
             
         }

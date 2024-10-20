@@ -95,11 +95,9 @@ extension ElectronicProductEnvironment {
                     return TabletEnvironment.ProductType.allData()
                 case .accessory:
                     return AccesoriesEnvironment.ProductType.allData()
-                case .monitor:   break
-                    
+                case .monitor:
+                    return MonitorEnvironment.Monitor.allData()
                 }
-                
-                return [:]
             }
             
             case notebook

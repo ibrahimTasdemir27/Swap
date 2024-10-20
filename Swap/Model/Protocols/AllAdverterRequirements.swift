@@ -7,29 +7,6 @@
 
 import UIKit
 
-/*
- Şimdi advert gösterecek controller için tip koşullarını karlılayan typealias'a;
-    typealias = AdvertViewControllerType dedik
- 
- Bu advert'in tüm adımlarını yöneten bir protokol controller var ->
- func basicsInfoRequirementsSuccess()
- func createAdvertProductSuccess(_ product: Product, with images: [UIImage])
- func readyAdressContent(_ adress: AdressViewModel.Adress)
- func didFinishSelectImage(with images: [UIImage])
- 
- Şimdi bu protokol bir controller içerisinde kullanılması gerektiği için buna AllAdvertRequirementsController diyebilirim
- 
- Bir de bu adverti hazırlayan bir protokol var ->
- func setupBasicInfo()
- func createAdvert() -> AdvertType?
- func pickImageSuccess(_ images: [UIImage])
- 
- Bu da bilgileri sağlayan bir data görevi görüyor oluşturuyor adverti oluşturan kısım burası
- 
- 
- 
- 
- */
 
 protocol AdvertPropertyProvider: AnyObject {
     func basicsInfoRequirementsSuccess()

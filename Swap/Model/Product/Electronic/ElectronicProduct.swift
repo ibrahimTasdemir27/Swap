@@ -50,14 +50,20 @@ struct ElectronicProductEnvironment {
         func getChilds() -> [String : Any] {
             switch self {
             case .computer: return ComputerEnvironment.ComputerCategory.allData()
+            case .phone:    return PhoneEnvironment.ProductType.allData()
+            case .other:    return [Finalizer.otherelectronic.rawValue : Finalizer.otherelectronic.rawValue ]
             }
         }
         
         case computer
+        case phone
+        case other
         
         func describe() -> String {
             switch self {
             case .computer:             return "Bilgisayar"
+            case .phone:                return "Telefon"
+            case .other:                return "Diğer Her Şey"
             }
         }
     }

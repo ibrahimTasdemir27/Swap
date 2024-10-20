@@ -40,12 +40,6 @@ final class AdvertLandViewController: AdvertViewControllerType, AlertPresentable
     
     
     
-    /*
-     Şimdi hem integer olabilir,
-     hem de optional olabilir,
-     
-     */
-    
 //    let zoneState: ZoneState
 //    let sqft: Int
 //    let islandNo: Int
